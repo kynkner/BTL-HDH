@@ -1,0 +1,330 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\setlength{\parindent}{0pt}
+\usepackage[left=2cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+
+\usepackage{tcolorbox}
+
+
+\begin{document}
+% Bìa
+\begin{titlepage}
+	\begin{tcolorbox}[colback=white, colframe=black, width=\textwidth, height=\textheight,  boxsep=1em]
+		\centering
+		\vspace*{0.2cm}
+		{\fontsize{15}{0} \textbf{HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG\\VIỆN KINH TẾ}}
+		
+		\vspace{0.01cm}
+		{\fontsize{15}{14} \textbf{------------------------------}}
+		\vspace{0.8cm}
+	
+		\includegraphics[width=6cm]{img/logo.png} 
+		
+		\vspace{1cm}
+			{\fontsize{18}{14} \textbf{BÁO CÁO BÀI TẬP LỚN\\HỆ ĐIỀU HÀNH LINUX VÀ MS-DOS}}
+		
+		\vspace{0.2cm}
+		{\fontsize{18}{14} \textbf{Bộ Môn: Hệ Điều Hành}}
+		
+		\vspace{2cm}
+		\begin{tabular}{ll}
+			{\fontsize{15}{0} \textbf{Thành viên:}} 
+			& {\fontsize{14}{14}\selectfont Trần Minh Hiếu(Trưởng nhóm)}\\
+			& {\fontsize{14}{14}\selectfont Nguyễn Tấn Dũng} \\
+			& {\fontsize{14}{14}\selectfont Trần Đức An} \\
+			& {\fontsize{14}{14}\selectfont Đỗ Chí Công} \\
+			& {\fontsize{14}{14}\selectfont Vũ Ngọc Duy} \\
+		\end{tabular}
+		
+		\vspace{5.7cm}
+		{\fontsize{15}{14} \textbf{HÀ NỘI - 2023}}
+		
+		
+	\end{tcolorbox}
+\end{titlepage}
+
+
+%Giới Thiệu
+\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{Giới thiệu}
+\begin{center}
+	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{Giới thiệu}}}
+\end{center}
+
+\section{Khái quát về lịch sử}
+\subsection{Linux}
+\subsubsection{Unix - tiền thân của Linux}
+Vào năm 1969, phong thí nghiệm Bell Labs của AT\&T đã phát triền một hệ điều hành gọi là “Unix”. Unix được viết bằng Assembly(Hợp ngữ)
+\begin{center}
+	\includegraphics[height= 9cm]{img/Ảnh2.png}
+	\includegraphics[height= 10cm]{img/Ảnh3.png}
+
+\end{center}
+Lúc đó, đĩa mềm vẫn còn là một thứ khá xa xỉ. Những chiếc máy tính thời đó đã “nhỏ gọn” hơn xưa, chỉ to bằng vài cái tử quần áo ghép lại. Dữ liệu của chúng nạp từ các băng từ (như cuộn băng cát xét khổng lồ), và thiết bị nhập/xuất chuẩn là các máy teletypewriter (giống máy đánh chữ).
+\begin{center}
+	\includegraphics[height=13cm]{img/Ảnh4.png}
+\end{center}
+Năm 1971, Unix đã được viết lại bằng ngôn ngữ C, do phải công bố mã nguồn của Unix. Kết quả là Unix đã phát triển nhanh tróng, được các tổ chức học thuật và doanh nghiệp sử dụng rộng rãi. Các nhánh lớn của Unix có thể kể đến như: BSD (Đại học California, Berkeley), Xenix (Microsoft), SunOS/Solaris(Oracle), AIX (IBM), …\\
+
+Các phần mềm hệ thống trong Unix được đơn giản hóa thành 2 phần chính: kernal (hạt nhân) và bộ công cụ hệ thống system utilities, bao gồm các lệnh ls, cat, awk, find, grep, cd, shell, ...). Người dùng có thể ra lệnh cho hạt nhân của hệ điều hành điều khiển phần cứng của máy tính để thực hiện các tác vụ tính toán.\\
+
+Năm 1983, một dự án phần mềm miễn phí là GNU Project (viết tắt đệ quy của GNU is Not Unix) nhằm mục đích viết ra một hệ điều hành tương thích hoàn toàn với Unix (gọi là Unix-like).\\
+
+Đầu những năm 90, các chương trình cơ bản của GNU Projkect như trình biên dịch, bộ thư viện, soạn thảo,trình soạn thảo văn bản, command line shell, ... đã hoàn thiện. GNU chỉ còn thiếu một kernel tương thích với Unix để có thể tạo thành một hệ điều hành hoàn chỉnh. Kernal mà hộ đang viết cho hệ điều hành này đang lâm vào bế tắc.\\
+\subsubsection{Linux}
+Năm 1991, một chàng trai sinh viên tên Linus Torvals rất hứng thú các hệ điều hành đặc biệt MINIX nhưng do búc xúc vì MINIX bị gới hạn trong môi trường giáo dục. Anh đã chơi lớn viết ra kernel của mình và gọi là Linux.\\
+
+Thời gian đầu, Linux sử dụng các phần mềm hệ thống từ dự án MINIX. Với sự trợ giúp của các lập trình viên, dự án GNU tích hợp với kernel Linux đã tạo nên một hệ điều hành hoàn chỉnh. \\
+
+Hệ điều hành hoàn chỉnh được cấu thành bởi kernel Linux và bộ công cụ phần mềm GNU được gọi là Hệ điều hành GNU/Linux, mà hiện nay thường được gọi tắt là Linux, một hệ điều hành phổ biến hiện nay.\\
+
+Cái lõi Linux đó có thể kết hợp với các bộ phần mềm khác để tạo ra các hệ điều hành khác nhau, ví dụ như Android được kết hợp từ kernel Linux và các thành phần khác do Google (ban đầu là Công ty Android) phát triển, không dùng các phần mềm từ bộ công cụ GNU.
+\begin{center}
+	\includegraphics[height=8cm]{img/Ảnh5.png}
+\end{center}
+Nhấn  mạnh lại là Linux và GNU (và vài thằng khác) không phải là "cháu ruột" (một nhánh chính thức) của Unix mà chỉ là "con nhận nuôi" (có thiết kế tương tự) .
+\subsection{MS-DOS}
+\begin{center}
+	\includegraphics[height=7cm]{img/Ảnh6.png}
+\end{center}
+DOS (Disk Operating System - Hệ điều hành đĩa): Là một hệ điều hành dòng lệnh, không có giao diện. DOS xuất hiện từ thập kỷ 1980 và được sử dụng rộng rãi trên các máy tình cá nhân (PC) trong thời kỳ đó. DOS không phải sản phẩm của Microsoft, mà là một hệ điều hành độc lập được phát triển bởi nhiều công ty khác nhau. \\
+
+MS-DOS (Microsoft Disk Operation System, hệ điều hành chạy đĩa từ Microsolt): Là một hệ điều hành có giao diện dòng lệnh được thiết kế cho các máy tính họ PC nhưng được tích hợp sâu vào các phiên bản Windows trước Windows 95.\\
+
+MS-DOS cung cấp cho người dùng khả năng điều hướng, mở và thao tác các tệp trên máy tính của họ thông qua giao diện dòng lệnh.\\
+\begin{center}
+	\includegraphics[height=8cm]{img/Ảnh7.png}
+	\includegraphics[height=9cm]{img/Ảnh8.png}
+\end{center}
+- Nó là phiên bản của DOS được phát triển và phân phối bởi Microsoft, được viết bằng hợp ngữ 808 và MS-DOS đã trải qua tám phiên bản cho đến khi ngừng phát triển vào năm 2000. \\
+
+- Ban đầu, MS-DOS nhắm đến bộ xử lý Intel 8086 chạy trên phần cứng máy tính sử dụng đĩa mềm để lưu trữ và truy cập hệ điều hành, phần mềm ứng dụng và dữ liệu người dùng.\\
+
+- Trong khi hầu hết người dùng máy tính hiện nay quen thuộc với cách điều hướng Microsoft Windows bằng chuột, thì MS-DOS được điều hướng bằng các lệnh MS-DOS. Ví dụ: nếu bạn muốn xem tất cả các tệp trong một thư mục trong Windows, bạn sẽ bấm đúp vào thư mục đó để mở thư mục đó trong Windows Explorer. Tuy nhiên, trong MS-DOS, bạn sẽ điều hướng đến thư mục bằng lệnh cd và sau đó liệt kê các tệp trong thư mục đó bằng lệnh dir.\\
+
+\textbf{Hạn chế của MS-DOS}
+
+\begin{itemize}
+	\item Bảo mật tích hợp: DOS không có bảo mật tích hợp, chẳng hạn như quyền sở hữu và quyền đối với tệp.
+	\item Không có nhiều người dùng hoặc đa nhiệm: Nó cũng không hỗ trợ nhiều người dùng hoặc đa nhiệm.
+	\item Giao diện đầy thử thách: Người dùng phải gõ lệnh và ghi nhớ các lệnh để chạy chương trình và các tác vụ khác của hệ điều hành. 
+\end{itemize}
+
+- Thập kỷ 1990: Windows dựa trên MS-DOSLấy cảm hứng từ giao diện người dùng đồ họa của hệ thống được phát triển bởi Doug Engelbart tại Viện Nghiên cứu Stanford, Microsoft quyết định thêm một giao diện người dùng đồ họa cho MS-DOS mà họ gọi là Windows. Hai phiên bản đầu tiên của Windows (năm 1985 và 1987) không thành công lớn, một phần do hạn chế của phần cứng máy tính cá nhân có sẵn vào thời điểm đó. Năm 1990, Microsoft phát hành Windows 3.0 cho Intel 386 và bán được hơn một triệu bản trong sáu tháng. Windows 3.0 không phải là một hệ điều hành thực sự, mà là môi trường đồ họa được xây dựng trên MS-DOS, vẫn đang kiểm soát máy và hệ thống tệp tin. Tất cả các chương trình chạy trong không gian địa chỉ chung và một lỗi trong bất kỳ chương trình nào cũng có thể làm đơ toàn bộ hệ thống, gây khó chịu.\\
+
+Tháng 8 năm 1995, Windows 95 được phát hành. Nó chứa nhiều tính năng của một hệ điều hành đầy đủ, bao gồm bộ nhớ ảo, quản lý quy trình và đa chương trình, và giới thiệu các giao diện lập trình 32-bit. Tuy nhiên, nó vẫn thiếu tính bảo mật và cung cấp sự cô lập kém giữa các ứng dụng và hệ điều hành. Do đó, vấn đề với sự không ổn định tiếp tục tồn tại, ngay cả sau các phiên bản tiếp theo của Windows 98 và Windows Me, nơi MS-DOS vẫn tiếp tục chạy mã lập trình 16-bit trong hạt nhân của hệ điều hành Windows.
+
+
+\section{Thống kê số lượng sử dụng hệ điều hành}
+\subsection{Linux}
+\begin{center}
+	\includegraphics[height=14cm]{img/Ảnh9.png}
+\end{center}
+\subsection{MS-DOS}
+- Hệ điều hành dòng lệnh phổ biến được sử dụng trước đây trên các máy tính cá nhân. Giúp định hình nền của ngành công nghiệp máy tính từ những năm 1980 đến đầu những năm 1990.\\
+
+- MS-DOS đã từng rất phổ biến trong suốt thập niên 1980 và đầu thập niên 1990  trước khi Windows 95 ra đời.
+
+\section{Mục đích sử dụng hệ điều hành}
+\subsection{Linux}
+- Hệ điều hành máy chủ (Server OS): Linux thường được sử dụng rộng rãi như một hệ điều hành máy chủ. Các phiên bản như Ubuntu Server, CentOS, hoặc Debian thường được triển khai để quản lý máy chủ web, máy chủ cơ sở dữ liệu, và các dịch vụ mạng khác.\\
+
+- Phát triển và Lập trình: Linux cung cấp một môi trường lý tưởng cho nhà phát triển và lập trình viên. Nó đi kèm với nhiều công cụ và thư viện mã nguồn mở, cũng như môi trường dòng lệnh mạnh mẽ, giúp tối ưu hóa quá trình phát triển và kiểm thử phần mềm.\\
+
+- Hệ điều hành máy tính cá nhân (Desktop OS): Một số bản phân phối Linux như Ubuntu, Fedora, và Linux Mint có thể được cài đặt và sử dụng trên máy tính cá nhân như một hệ điều hành chính\\
+
+- Hệ thống nhúng: Linux thường được sử dụng trong các hệ thống nhúng, nơi tài nguyên hạn chế và độ ổn định cao là quan trọng. Điều này bao gồm các ứng dụng như điều khiển thiết bị, IoT (Internet of Things), và các hệ thống nhúng khác. \\
+
+- Học tập và Nghiên cứu: Linux là một lựa chọn phổ biến cho việc học tập và nghiên cứu trong lĩnh vực Công nghệ thông tin. Đối với sinh viên và người nghiên cứu, sử dụng Linux có thể mang lại trải nghiệm thực tế với hệ thống và mạng máy tính.\\
+
+- An toàn và Bảo mật: Do tính bảo mật cao, nhiều người sử dụng Linux để xây dựng hệ thống an toàn và bảo mật. Cộng đồng mã nguồn mở liên tục kiểm tra và cập nhật mã nguồn, giúp giảm thiểu rủi ro an ninh.
+\begin{center}
+	\includegraphics[height=10cm]{img/Ảnh10.png}
+	\includegraphics[height=8cm]{img/Ảnh11.png}
+\end{center}
+\textbf{Ưu điểm:}
+\begin{itemize}
+	\item Tính ổn định cao
+	\item Khả năng bảo mật tốt
+	\item Khá linh hoạt
+	\item Tính chủ động
+	\item Chi phí rẻ
+\end{itemize}
+\textbf{Tính ổn định cao} \\
+Có thể một lúc sử lý nhưng khối lượng công viêc lớn và ít xảy ra tình trạng mất ổn định, xuống cấp. Đó là là sự lựa chọn hoàn hảo dành cho những doanh nghiệp nhờ vào việc hạn chế những rủi ro xảy ra một cách tối đa của hệ điều hành.\\
+
+\textbf{Khả năng bảo mật tốt}\\
+Linux đang được xây dựng dựa vào nền tảng của Unix - 1 hệ điều hành đa nhiệm. Chính vì vậy chỉ root user và quản trị mới có khả năng cấp quyền truy cập dùng những cách của quan trọng. Hiện tại VPS Linux có độ bảo mật vô cùng cao. \\
+
+\textbf{Khá linh loạt}\\
+Nó cho phép mở rộng cũng như hoàn toàn có thể hoạt động tốt với bất cứ một máy tính nào. Hệ điều hành sẽ không bị kiến trúc máy và bộ xử lý ảnh hưởng. \\
+
+\textbf{Tính chủ động }\\
+Người dùng hoàn toàn có thể kết hợp tự do và lựa chọn những gì mà bản thân cảm thấy phù hợp. Ở thời điểm hiện tại doanh nghiệp không cần phải lo lắng tới vấn đề bản quyền.\\
+
+\textbf{Nhược điểm: }
+\begin{itemize}
+	\item Những phần mềm được hỗ trợ ở thời điểm hiện tại vẫn còn đang hạn chế. 
+	\item Một số những nhà sản xuất hiện tại vẫn không phát triển driver để hỗ trợ cho nền tảng Linux.
+\end{itemize}
+\subsection{MS-DOS}
+- Mặc dù hệ điều hành MS-DOS thường được đánh giá thấp bởi tính phức tập và khó sử dụng, tuy nhiên, nó vẫn còn một số ưu điểm sau đây:\\
+- Khuyến khích sáng tạo và suy nghĩ bởi cách làm việc trực tiếp với các dòng lệnh\\
+- Cung cấp khả năng cứu hộ máy tính từ những sự cố đơn giản đến những sự cố phức tạp hơn\\
+- Xử lý các thao tác được các tác vụ đa dạng.\\
+
+- Mặc dù không còn được sử dụng phổ biến như trước đây, hệ điều hành DOS vẫn được sử dụng và phát triển dưới tên gọi FreeDOS để tương thích với các phiên bản Windows hiện tại sau khi Microsoft ngừng hỗ trợ DOS.\\
+-FreeDOS đã được tích hợp sẵn trên một số máy tính hiện nay và cung cấp cho người dùng giải pháp khắc phục các sự cố hệ thống khi Windows không thể hoạt động. Mặc dù không còn được sử dụng nhưng giá trị của DOS đã đóng góp quan trọng vào việc phát triển hệ điều hành Windows.\\
+
+%Nội dung chính 
+\newpage
+\addcontentsline{toc}{section}{Nội dung chính}
+\begin{center}
+	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{Nội dụng chính}}}
+\end{center}
+\setcounter{section}{0}
+\section{Cấu trúc hệ thống}
+Cấu trúc hệ thống của một hệ điều hành bao gồm nhiều thành phần quan trọng để quản lý và điều khiển các tài nguyên của máy tính.
+\subsection{Linux}
+- Hệ thống Linux có thể được có là một loại kim tự tháp như minh họa trong Hình 10-1. Ở dưới cùng là phần cứng, bao gồm CPU, bộ nhớ, đĩa, một màn hình và bàn phím, và các thiết bị khác. Chạy trực tiếp trên phần cứng là hệ điều hành. Chức năng của nó là kiểm soát phần cứng và cung cấp một giao diện lời gọi hệ thống cho tất cả các chương trình. Những lời gọi hệ thống này cho phép các chương trình người dùng tạo ra và quản lý các tiến trình, tệp, và các tài nguyên khác.
+\begin{center}
+	\includegraphics[height= 8cm]{img/Ảnh12.png}
+\end{center}
+- Các chương trình thực hiện lời gọi hệ thống bằng cách đặt các đối số vào thanh ghi (hoặc đôi khi, trên ngăn xếp), và sử dụng các lệnh trap để chuyển từ chế độ người dùng sang chế độ hạt nhân.\\
+
+- Vì không có cách nào để viết một lệnh trap trong C, một thư viện được cung cấp, với một thủ tục cho mỗi lời gọi hệ thống. Những thủ tục này được viết bằng ngôn ngữ lắp ráp nhưng có thể được gọi từ C. Do đó, để thực hiện lời gọi hệ thống read, một chương trình C có thể gọi thủ tục thư viện read. Một điều nhỏ nữa, là giao diện thư viện, và không phải giao diện lời gọi hệ thống, được chỉ định bởi POSIX.\\
+
+- Ngoài hệ điều hành và thư viện lời gọi hệ thống, tất cả các phiên bản của Linux cung cấp một số lượng lớn các chương trình tiêu chuẩn, trong đó có một số được quy định bởi tiêu chuẩn POSIX 1003.2, và một số khác khác nhau giữa các phiên bản Linux. Các chương trình này bao gồm bộ xử lý lệnh (shell), trình biên dịch, trình soạn thảo, chương trình xử lý văn bản, và các tiện ích thao tác tệp. Do đó, chúng ta có thể nói về ba giao diện khác nhau với Linux: giao diện lời gọi hệ thống thực sự, giao diện thư viện, và giao diện được hình thành bởi bộ chương trình tiện ích tiêu chuẩn.\\
+
+- Giao diện người dùng đồ họa (GUI) trên Linux được hỗ trợ bởi Hệ thống cửa sổ X, hay phổ biến là X11 hoặc chỉ đơn giản là X, mà xác định các giao thức truyền thông và hiển thị để điều khiển cửa sổ trên màn hình bitmap cho hệ thống UNIX và các hệ thống giống UNIX. X server là thành phần chính kiểm soát các thiết bị như bàn phím, chuột và màn hình và chịu trách nhiệm chuyển hướng đầu vào hoặc chấp nhận đầu ra từ các chương trình khách.\\
+
+- Khi làm việc trên các hệ thống Linux thông qua giao diện đồ họa, người dùng có thể sử dụng chuột để chạy ứng dụng hoặc mở tệp, kéo và thả để sao chép tệp từ một vị trí sang vị trí khác, và còn nhiều thao tác khác. Ngoài ra, người dùng có thể gọi một chương trình mô phỏng terminal, hoặc xterm, cung cấp giao diện dòng lệnh cơ bản cho hệ điều hành. Mô tả của nó được đưa ra trong phần tiếp theo.\\
+
+- Hệ điều hành Linux dựa trên mô hình hạt nhân (kernel) Linux. Cấu trúc của hệ thống điều hành này bao gồm các thành phần chính sau: 
+\begin{itemize}
+	\item Hạt nhân (Kernel): Là bộ phận quản lý tài nguyên phần cứng, điều phối việc truy cập phần cứng và quản lý tiến trình trong hệ thống.
+	\item Thư viện hỗ trợ (Libraries): Chứa các tập tin nhị phân và mã nguồn cho các chương trình trên hệ điều hành. Cung cấp một tập hợp các chức năng mà các ứng dụng có thể sử dụng để truy cập các chức năng của hệ thống.
+	\item Shell (Giao diện dòng lệnh): Shell là giao diện giữa người dùng và hệ điều hành Linux. Cung cấp một cách để người dùng tương tác và điều khiển các hoạt động trên hệ thống thông qua các lệnh dòng lệnh.
+	\item Tiện ích hệ thống (System Utilities): Các tiện ích cung cấp các công cụ hỗ trợ cho quản lý hệ thống như trình quản lý tác vụ, trình quản lý file, tiện ích mạng và nhiều công cụ khác để quản lý và điều chỉnh các cài đặt hệ thống
+	\item Môi trường đồ họa (Graphical Environment): Linux cung cấp nhiều môi trường đồ họa như GNOME, KDE, Xfce và Unity, cho phép người dùng tương tác với hệ điều hành thông qua giao diện đồ họa.
+	\item Ứng dụng: Linux hỗ trợ một loạt các ứng dụng, từ các ứng dụng văn phòng, trình duyệt web, trình phát nhạc, trình chơi game, đồ họa, cho đến các ứng dụng phục vụ cho lập trình, quản lý cơ sở dữ liệu và nhiều lĩnh vực khác. Đây chỉ là một tổng quan về cấu trúc hệ điều hành Linux. Mỗi phiên bản hệ điều hành có thể có những thành phần bổ sung hoặc sửa đổi riêng biệt.
+\end{itemize}
+
+\subsection{MS-DOS}
+- MS-DOS (Microsoft Disk Operating System) là một hệ điều hành dòng lệnh phổ biến của Microsoft trong những năm 1980 và 1990. Dưới đây là cấu trúc tổ chức hệ thống của MS-DOS: 
+\begin{itemize}
+	\item Kernal(Hạt nhân): Hạt nhân của MS-DOS thực hiện các chức năng cơ bản của hệ điều hành, chẳng hạn như quản lý bộ nhớ, tương tác với phần cứng, và thực hiện các lệnh cơ bản.
+	\item MBR (Master Boot Record): MBR là một vùng nhớ đặc biệt nằm ở đầu đĩa cứng, chứa thông tin khởi động ban đầu cho hệ điều hành.
+	\item Boot Sector: Boot sector là phần đầu tiên của ổ đĩa mà hệ thống cần đọc để khởi động. Nó chứa code máy ảo (Bootstrap Loader) để chuyển quyền điều khiển từ MBR sang hệ điều hành.
+	\item File Allocation Table (FAT): FAT là một bảng lưu trữ thông tin về cách mà các file và thư mục được lưu trữ trên đĩa. Nó giúp hệ điều hành xác định vị trí vật lý của các file và thư mục trong hệ thống tập tin.
+	\item File System: File system xác định cách thức tổ chức, quản lý và lưu trữ các file và thư mục. MS-DOS sử dụng hệ thống tập tin FAT (FAT12, FAT16 hoặc FAT32).
+	\item Command Interpreter (COMMAND.COM): Command interpreter là chương trình chính để thực thi các lệnh được nhập từ bàn phím. Nó đọc các lệnh, thực thi chúng và hiển thị kết quả trên màn hình.
+	\item Device Drivers: Device drivers là các chương trình phần mềm cho phép hệ điều hành giao tiếp với các thiết bị phần cứng như bàn phím, màn hình, máy in, ổ đĩa, vv.
+	\item Utilities: MS-DOS cung cấp một số các tiện ích dòng lệnh để quản lý file, thư mục, đĩa và thực hiện các tác vụ khác nhau như sao chép, xóa, di chuyển, đổi tên file, vv. Đây chỉ là một cái nhìn tổng quan về cấu trúc hệ thống MS-DOS và mỗi phiên bản có thể có những đặc điểm và cấu trúc riêng biệt.
+\end{itemize}
+\subsection{So sánh}
+Cấu trúc hệ thống của Linux và MS-DOS có nhiều điểm khác nhau do tiến trình phát triển và mục đích sử dụng khác nhau. Dưới đây là một số điểm khác biệt chính:
+\begin{enumerate}
+	\item Hạt nhân (Kernel):
+	\begin{itemize}
+		\item [--] Linux: Sử dụng hạt nhân Linux, mở và mã nguồn mở.
+		\item [--] MS-DOS: Sử dụng hạt nhân MS-DOS, không phải mã nguồn mở.
+	\end{itemize}
+	\item Cấu trúc tệp (File System):
+	\begin{itemize}
+		\item [--] Linux: Sử dụng hệ thống tệp Linux như ext4, ext3, ext2, xfs, v.v.
+		\item [--] MS-DOS: Sử dụng File Allocation Table (FAT) hoặc New Technology File System (NTFS).
+	\end{itemize}
+	\item Multi-Tasking (Đa nhiệm):
+		\begin{itemize}
+		\item [--] Linux: Hỗ trợ đa nhiệm, cho phép chạy nhiều tiến trình cùng một lúc.
+		\item [--] MS-DOS: Ban đầu hỗ trợ đa nhiệm giới hạn, nhưng không như Linux. Trong các phiên bản sau, Windows đã thay thế MS-DOS làm hệ điều hành chính và hỗ trợ đa nhiệm đầy đủ.
+	\end{itemize}
+	\item Giao diện người dùng:
+		\begin{itemize}
+		\item [--] Linux: Cung cấp giao diện dòng lệnh và giao diện đồ họa (GUI) như GNOME, KDE, Unity, v.v.
+		\item [--] MS-DOS: Ban đầu chỉ có giao diện dòng lệnh, không có giao diện đồ họa. Tuy nhiên, sau đó, Microsoft đã phát triển Windows để cung cấp giao diện đồ họa.
+	\end{itemize}
+	\item Mục đích sử dụng:
+		\begin{itemize}
+		\item [--] Linux: Thường được sử dụng trong hệ thống máy chủ, máy tính cá nhân và các thiết bị nhúng. Được phát triển với triết lý mã nguồn mở, linh hoạt và bảo mật cao.
+		\item [--] MS-DOS: Ban đầu được phát triển cho máy tính cá nhân, sử dụng chủ yếu trong các ứng dụng đơn giản và trò chơi. Tóm lại, Linux và MS-DOS có những khác biệt về hạt nhân, cấu trúc tệp, đa nhiệm, giao diện người dùng và mục đích sử dụng. Các yếu tố này tạo nên sự khác biệt giữa hai hệ thống này.
+	\end{itemize}
+\end{enumerate}
+\section{Các hàm shell}
+\begin{itemize}
+	\item Khái niệm: Shell là một giao diện dòng lệnh cho phép người dùng tương tác với hệ thống bằng cách nhập lệnh từ bàn phím. Nó giúp thực thi các lệnh, quản lý tiến trình, và cung cấp môi trường cho người dùng thao tác với hệ thống.
+	\item Chức năng: Shell chịu trách nhiệm cho việc thực hiện các lệnh, quản lý biến môi trường, và cung cấp các tính năng như scripting để tự động hóa các tác vụ. 
+\end{itemize}
+\subsection{Linux}
+- Mặc dù các hệ thống Linux có giao diện người dùng đồ họa, hầu hết các lập trình viên và người dùng có kinh nghiệm vẫn ưa thích một giao diện dòng lệnh, gọi là shell. Thường họ bắt đầu một hoặc nhiều cửa sổ shell từ giao diện người dùng đồ họa và làm việc trực tiếp trong chúng. Giao diện dòng lệnh shell nhanh hơn để sử dụng, mạnh mẽ hơn, dễ mở rộng và không gây mệt mỏi cho người dùng vì phải sử dụng chuột liên tục.\\
+
+- Dưới đây, chúng ta sẽ tóm tắt ngắn gọn về shell bash (bash). Nó được xây dựng chủ yếu dựa trên shell UNIX gốc, Bourne shell (được viết bởi Steve Bourne, tại Bell Labs). Tên của nó là một chữ viết tắt của Bourne Again SHell. Nhiều shell khác cũng được sử dụng (ksh, csh, v.v.), nhưng bash là shell mặc định trong hầu hết các hệ thống Linux.\\
+
+- Lệnh có thể nhận các tham số, được chuyển đến chương trình được gọi dưới dạng chuỗi ký tự. Ví dụ, dòng lệnh  :\\
+
+cp src dest\\
+
+gọi chương trình cp với hai tham số, src và dest. Chương trình này hiểu tham số đầu tiên là tên của một tệp tin đã tồn tại. Nó tạo một bản sao của tệp tin này và đặt tên bản sao là dest.\\
+
+head -20 file\\
+
+- Cho biết cho head in ra 20 dòng đầu tiên của tệp tin, thay vì số dòng mặc định là 10.\\
+
+ls *.c\\
+
+bảo ls liệt kê tất cả các tệp tin có tên kết thúc bằng .c\\
+
+\textbf{Các hàm sell cơ bản trong Linux:}\\
+
+\begin{enumerate}
+	\item `ls`: Hiển thị danh sách các tệp và thư mục trong thư mục hiện tại.
+	\item `cd`: Đổi thư mục làm việc hiện tại.
+	\item `pwd`: In ra đường dẫn đầy đủ tới thư mục làm việc hiện tại.
+	\item `mkdir`: Tạo mới một thư mục.
+	\item `rm`: Xóa một tệp hoặc thư mục.
+	\item `cp`: Sao chép tệp hoặc thư mục.
+	\item `mv`: Di chuyển tệp hoặc thư mục.
+	\item `cat`: Đọc và in nội dung của một hoặc nhiều tệp lên màn hình.
+	\item `grep`: Lọc các dòng trong tệp dựa trên biểu thức chính quy.
+	\item `chmod`: Thay đổi quyền truy cập của tệp hoặc thư mục.
+	\item `chown`: Thay đổi chủ sở hữu của tệp hoặc thư mục.
+	\item 
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+
+\subsection{MS-DOS}
+\subsection{So sánh}
+\section{Quản lý bộ nhớ}
+\subsection{Linux}
+\subsection{MS-DOS}
+\subsection{So sánh}
+\section{Quản lý file}
+\subsection{Linux}
+\subsection{MS-DOS}
+\subsection{So sánh}
+\section{Các đặc điểm của 2 hệ thống}
+\subsection{Linux}
+\subsection{MS-DOS}
+\subsection{So sánh}
+
+%Kết luận  
+\newpage
+\addcontentsline{toc}{section}{KẾT LUẬN}
+\begin{center}
+	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{KẾT LUẬN}}}
+\end{center}
+
+
+
+
+	
+	
+	
+\end{document}
