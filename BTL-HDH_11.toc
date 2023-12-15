@@ -18,17 +18,17 @@
 \contentsline {section}{\numberline {2}Các hàm shell}{14}{}%
 \contentsline {subsection}{\numberline {2.1}Linux}{14}{}%
 \contentsline {subsection}{\numberline {2.2}MS-DOS}{15}{}%
-\contentsline {subsection}{\numberline {2.3}So sánh}{15}{}%
-\contentsline {section}{\numberline {3}Quản lý bộ nhớ}{15}{}%
-\contentsline {subsection}{\numberline {3.1}Linux}{15}{}%
-\contentsline {subsection}{\numberline {3.2}MS-DOS}{15}{}%
-\contentsline {subsection}{\numberline {3.3}So sánh}{15}{}%
-\contentsline {section}{\numberline {4}Quản lý file}{15}{}%
-\contentsline {subsection}{\numberline {4.1}Linux}{15}{}%
-\contentsline {subsection}{\numberline {4.2}MS-DOS}{15}{}%
-\contentsline {subsection}{\numberline {4.3}So sánh}{15}{}%
-\contentsline {section}{\numberline {5}Các đặc điểm của 2 hệ thống}{15}{}%
-\contentsline {subsection}{\numberline {5.1}Linux}{15}{}%
-\contentsline {subsection}{\numberline {5.2}MS-DOS}{15}{}%
-\contentsline {subsection}{\numberline {5.3}So sánh}{15}{}%
-\contentsline {section}{KẾT LUẬN}{16}{}%
+\contentsline {subsection}{\numberline {2.3}So sánh}{16}{}%
+\contentsline {section}{\numberline {3}Quản lý bộ nhớ}{16}{}%
+\contentsline {subsection}{\numberline {3.1}Linux}{16}{}%
+\contentsline {subsection}{\numberline {3.2}MS-DOS}{18}{}%
+\contentsline {subsection}{\numberline {3.3}So sánh}{18}{}%
+\contentsline {section}{\numberline {4}Quản lý file}{20}{}%
+\contentsline {subsection}{\numberline {4.1}Linux}{20}{}%
+\contentsline {subsection}{\numberline {4.2}MS-DOS}{22}{}%
+\contentsline {subsection}{\numberline {4.3}So sánh}{22}{}%
+\contentsline {section}{\numberline {5}Các đặc điểm của 2 hệ thống}{23}{}%
+\contentsline {subsection}{\numberline {5.1}Linux}{23}{}%
+\contentsline {subsection}{\numberline {5.2}MS-DOS}{23}{}%
+\contentsline {subsection}{\numberline {5.3}So sánh}{23}{}%
+\contentsline {section}{KẾT LUẬN}{24}{}%
