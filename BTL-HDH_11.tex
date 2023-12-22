@@ -29,17 +29,22 @@
 		\vspace{0.2cm}
 		{\fontsize{18}{14} \textbf{Bộ Môn: Hệ Điều Hành}}
 		
+		\vspace{0.2cm}
+		{\fontsize{11}{14} \textbf{Đề tài: Tìm hiểu chung về 2 họ hệ điều hành (OS): MS-Dos và Linux trên máy tính cá nhân PC.}}
+		{\fontsize{11}{14} So sánh về cấu trúc hệ thống, về các hàm Shell (lời gọi hệ thống), về quản lý bộ nhớ, về quản lý file của 2 hệ điều hành trên và cho biết các đặc điểm của 2 hệ thống.}
+		
+		
 		\vspace{2cm}
 		\begin{tabular}{ll}
 			{\fontsize{15}{0} \textbf{Thành viên:}} 
-			& {\fontsize{14}{14}\selectfont Trần Minh Hiếu(Trưởng nhóm)}\\
-			& {\fontsize{14}{14}\selectfont Nguyễn Tấn Dũng} \\
+			& {\fontsize{14}{14}\selectfont Trần Minh Hiếu (Trưởng nhóm) - MSV: }\\
+			& {\fontsize{14}{14}\selectfont Nguyễn Tấn Dũng - MSV: B21DVCN049} \\
 			& {\fontsize{14}{14}\selectfont Trần Đức An} \\
-			& {\fontsize{14}{14}\selectfont Đỗ Chí Công} \\
+			& {\fontsize{14}{14}\selectfont Đỗ Chí Công - MSV: B21DVCN031} \\
 			& {\fontsize{14}{14}\selectfont Vũ Ngọc Duy} \\
 		\end{tabular}
 		
-		\vspace{5.7cm}
+		\vspace{4cm}
 		{\fontsize{15}{14} \textbf{HÀ NỘI - 2023}}
 		
 		
@@ -55,130 +60,102 @@
 	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{Giới thiệu}}}
 \end{center}
 
-\section{Khái quát về lịch sử}
-\subsection{Linux}
-\subsubsection{Unix - tiền thân của Linux}
-Vào năm 1969, phong thí nghiệm Bell Labs của AT\&T đã phát triền một hệ điều hành gọi là “Unix”. Unix được viết bằng Assembly(Hợp ngữ)
-\begin{center}
-	\includegraphics[height= 9cm]{img/Ảnh2.png}
-	\includegraphics[height= 10cm]{img/Ảnh3.png}
-\end{center}
-Lúc đó, đĩa mềm vẫn còn là một thứ khá xa xỉ. Những chiếc máy tính thời đó đã “nhỏ gọn” hơn xưa, chỉ to bằng vài cái tử quần áo ghép lại. Dữ liệu của chúng nạp từ các băng từ (như cuộn băng cát xét khổng lồ), và thiết bị nhập/xuất chuẩn là các máy teletypewriter (giống máy đánh chữ).
-\begin{center}
-	\includegraphics[height=13cm]{img/Ảnh4.png}
-\end{center}
-Năm 1971, Unix đã được viết lại bằng ngôn ngữ C, do phải công bố mã nguồn của Unix. Kết quả là Unix đã phát triển nhanh tróng, được các tổ chức học thuật và doanh nghiệp sử dụng rộng rãi. Các nhánh lớn của Unix có thể kể đến như: BSD (Đại học California, Berkeley), Xenix (Microsoft), SunOS/Solaris(Oracle), AIX (IBM), …\\
-
-Các phần mềm hệ thống trong Unix được đơn giản hóa thành 2 phần chính: kernal (hạt nhân) và bộ công cụ hệ thống system utilities, bao gồm các lệnh ls, cat, awk, find, grep, cd, shell, ...). Người dùng có thể ra lệnh cho hạt nhân của hệ điều hành điều khiển phần cứng của máy tính để thực hiện các tác vụ tính toán.\\
-
-Năm 1983, một dự án phần mềm miễn phí là GNU Project (viết tắt đệ quy của GNU is Not Unix) nhằm mục đích viết ra một hệ điều hành tương thích hoàn toàn với Unix (gọi là Unix-like).\\
-
-Đầu những năm 90, các chương trình cơ bản của GNU Projkect như trình biên dịch, bộ thư viện, soạn thảo,trình soạn thảo văn bản, command line shell, ... đã hoàn thiện. GNU chỉ còn thiếu một kernel tương thích với Unix để có thể tạo thành một hệ điều hành hoàn chỉnh. Kernal mà hộ đang viết cho hệ điều hành này đang lâm vào bế tắc.\\
-\subsubsection{Linux}
-Năm 1991, một chàng trai sinh viên tên Linus Torvals rất hứng thú các hệ điều hành đặc biệt MINIX nhưng do búc xúc vì MINIX bị gới hạn trong môi trường giáo dục. Anh đã chơi lớn viết ra kernel của mình và gọi là Linux.\\
-
-Thời gian đầu, Linux sử dụng các phần mềm hệ thống từ dự án MINIX. Với sự trợ giúp của các lập trình viên, dự án GNU tích hợp với kernel Linux đã tạo nên một hệ điều hành hoàn chỉnh. \\
-
-Hệ điều hành hoàn chỉnh được cấu thành bởi kernel Linux và bộ công cụ phần mềm GNU được gọi là Hệ điều hành GNU/Linux, mà hiện nay thường được gọi tắt là Linux, một hệ điều hành phổ biến hiện nay.\\
-
-Cái lõi Linux đó có thể kết hợp với các bộ phần mềm khác để tạo ra các hệ điều hành khác nhau, ví dụ như Android được kết hợp từ kernel Linux và các thành phần khác do Google (ban đầu là Công ty Android) phát triển, không dùng các phần mềm từ bộ công cụ GNU.
-\begin{center}
-	\includegraphics[height=8cm]{img/Ảnh5.png}
-\end{center}
-Nhấn  mạnh lại là Linux và GNU (và vài thằng khác) không phải là "cháu ruột" (một nhánh chính thức) của Unix mà chỉ là "con nhận nuôi" (có thiết kế tương tự) .
+\section{Khái quát lịch sử}
 \subsection{MS-DOS}
-\begin{center}
-	\includegraphics[height=7cm]{img/Ảnh6.png}
-\end{center}
-DOS (Disk Operating System - Hệ điều hành đĩa): Là một hệ điều hành dòng lệnh, không có giao diện. DOS xuất hiện từ thập kỷ 1980 và được sử dụng rộng rãi trên các máy tình cá nhân (PC) trong thời kỳ đó. DOS không phải sản phẩm của Microsoft, mà là một hệ điều hành độc lập được phát triển bởi nhiều công ty khác nhau. \\
-
-MS-DOS (Microsoft Disk Operation System, hệ điều hành chạy đĩa từ Microsolt): Là một hệ điều hành có giao diện dòng lệnh được thiết kế cho các máy tính họ PC nhưng được tích hợp sâu vào các phiên bản Windows trước Windows 95.\\
-
-MS-DOS cung cấp cho người dùng khả năng điều hướng, mở và thao tác các tệp trên máy tính của họ thông qua giao diện dòng lệnh.\\
-\begin{center}
-	\includegraphics[height=8cm]{img/Ảnh7.png}
-	\includegraphics[height=9cm]{img/Ảnh8.png}
-\end{center}
-- Nó là phiên bản của DOS được phát triển và phân phối bởi Microsoft, được viết bằng hợp ngữ 808 và MS-DOS đã trải qua tám phiên bản cho đến khi ngừng phát triển vào năm 2000. \\
-
-- Ban đầu, MS-DOS nhắm đến bộ xử lý Intel 8086 chạy trên phần cứng máy tính sử dụng đĩa mềm để lưu trữ và truy cập hệ điều hành, phần mềm ứng dụng và dữ liệu người dùng.\\
-
-- Trong khi hầu hết người dùng máy tính hiện nay quen thuộc với cách điều hướng Microsoft Windows bằng chuột, thì MS-DOS được điều hướng bằng các lệnh MS-DOS. Ví dụ: nếu bạn muốn xem tất cả các tệp trong một thư mục trong Windows, bạn sẽ bấm đúp vào thư mục đó để mở thư mục đó trong Windows Explorer. Tuy nhiên, trong MS-DOS, bạn sẽ điều hướng đến thư mục bằng lệnh cd và sau đó liệt kê các tệp trong thư mục đó bằng lệnh dir.\\
-
-\textbf{Hạn chế của MS-DOS}
-
 \begin{itemize}
-	\item Bảo mật tích hợp: DOS không có bảo mật tích hợp, chẳng hạn như quyền sở hữu và quyền đối với tệp.
-	\item Không có nhiều người dùng hoặc đa nhiệm: Nó cũng không hỗ trợ nhiều người dùng hoặc đa nhiệm.
-	\item Giao diện đầy thử thách: Người dùng phải gõ lệnh và ghi nhớ các lệnh để chạy chương trình và các tác vụ khác của hệ điều hành. 
+	\item Xuất Hiện và Phát Triển:
+	\begin{itemize}
+		\item MS-DOS, do Microsoft phát triển, xuất hiện vào năm 1981.
+		\item Được thiết kế cho máy tính cá nhân và máy tính tương thích IBM PC.
+	\end{itemize}
+	\item Thời Kỳ Phổ Biến: Trong thập kỷ 1980 và đầu thập kỷ 1990, MS-DOS là hệ điều hành phổ biến nhất trên máy tính cá nhân.
+	\item Giao Diện và Tính Năng:
+	\begin{itemize}
+		\item Giao diện dòng lệnh (Command Line Interface - CLI).
+		\item Hỗ trợ cơ bản cho các ứng dụng và trò chơi.
+	\end{itemize}
+	\item Giới Hạn và Chuyển Đổi:
+	\begin{itemize}
+		\item Hạn chế về đồ họa và đa nhiệm.
+		\item Microsoft chuyển hướng sang Windows để cải thiện giao diện đồ họa và khả năng đa nhiệm
+	\end{itemize}
+\end{itemize}
+\subsection{Linux}
+\begin{itemize}
+	\item Ngày xuất hiện và phát triển
+		\begin{itemize}
+		\item Linux được sáng tạo bởi Linus Torvalds vào năm 1991.
+		\item Mã nguồn mở, cho phép cộng đồng tham gia phát triển.
+		\end{itemize}
+	\item Tính Năng và Mục Đích Sử Dụng:
+		\begin{itemize}
+		\item Giao diện dòng lệnh và đồ họa, với nền tảng mạnh mẽ.
+		\item Được sử dụng rộng rãi trên máy chủ, máy tính cá nhân, và thiết bị nhúng.
+		\end{itemize}
+	\item Mã Nguồn Mở và Linh Hoạt:
+		\begin{itemize}
+		\item Mã nguồn mở giúp thúc đẩy sự đổi mới và sửa lỗi liên tục.
+		\item Linh hoạt và tùy chỉnh cao, phù hợp với nhiều môi trường và mục đích sử dụng.
+		\end{itemize}
+	\item Phổ Biến Ngày Nay:
+		\begin{itemize}
+		\item Ngày nay, Linux là một trong những hệ điều hành phổ biến nhất trên thế giới, được sử dụng trong nhiều môi trường từ máy tính cá nhân đến máy chủ và điện toán đám mây.
+		\item Android: Phiên bản Android chạy trên hạt nhân Linux, làm cho Linux hiện diện mạnh mẽ trong lĩnh vực di động
+		\end{itemize}
 \end{itemize}
 
-- Thập kỷ 1990: Windows dựa trên MS-DOSLấy cảm hứng từ giao diện người dùng đồ họa của hệ thống được phát triển bởi Doug Engelbart tại Viện Nghiên cứu Stanford, Microsoft quyết định thêm một giao diện người dùng đồ họa cho MS-DOS mà họ gọi là Windows. Hai phiên bản đầu tiên của Windows (năm 1985 và 1987) không thành công lớn, một phần do hạn chế của phần cứng máy tính cá nhân có sẵn vào thời điểm đó. Năm 1990, Microsoft phát hành Windows 3.0 cho Intel 386 và bán được hơn một triệu bản trong sáu tháng. Windows 3.0 không phải là một hệ điều hành thực sự, mà là môi trường đồ họa được xây dựng trên MS-DOS, vẫn đang kiểm soát máy và hệ thống tệp tin. Tất cả các chương trình chạy trong không gian địa chỉ chung và một lỗi trong bất kỳ chương trình nào cũng có thể làm đơ toàn bộ hệ thống, gây khó chịu.\\
-
-Tháng 8 năm 1995, Windows 95 được phát hành. Nó chứa nhiều tính năng của một hệ điều hành đầy đủ, bao gồm bộ nhớ ảo, quản lý quy trình và đa chương trình, và giới thiệu các giao diện lập trình 32-bit. Tuy nhiên, nó vẫn thiếu tính bảo mật và cung cấp sự cô lập kém giữa các ứng dụng và hệ điều hành. Do đó, vấn đề với sự không ổn định tiếp tục tồn tại, ngay cả sau các phiên bản tiếp theo của Windows 98 và Windows Me, nơi MS-DOS vẫn tiếp tục chạy mã lập trình 16-bit trong hạt nhân của hệ điều hành Windows.
-
+	--> Tổng kết:MS-DOS và Linux đều đóng vai trò quan trọng trong lịch sử hệ điều hành, từ giai đoạn đầu của máy tính cá nhân đến sự phổ biến và ổn định ngày nay. MS-DOS đã mở đường cho sự phổ biến của máy tính cá nhân, trong khi Linux đại diện cho sự mở nguồn và linh hoạt trong thế giới công nghiệp và máy chủ.
 
 \section{Thống kê số lượng sử dụng hệ điều hành}
 \subsection{Linux}
-\begin{center}
-	\includegraphics[height=14cm]{img/Ảnh9.png}
-\end{center}
+Linux đã trở thành một trong những hệ điều hành phổ biến nhất trên thế giới, đặc biệt trong các môi trường máy chủ và hệ thống lớn.\\
+
+Trên máy chủ web, Linux chiếm một tỷ lệ lớn, đặc biệt là trong các trang web lớn và các dịch vụ điện toán đám mây.\\
+
+Linux được sử dụng rộng rãi trong các thiết bị nhúng, điện thoại thông minh (qua Android), và các thiết bị IoT (Internet of Things).\\
 \subsection{MS-DOS}
-- Hệ điều hành dòng lệnh phổ biến được sử dụng trước đây trên các máy tính cá nhân. Giúp định hình nền của ngành công nghiệp máy tính từ những năm 1980 đến đầu những năm 1990.\\
+MS-DOS không còn được sử dụng phổ biến trên máy tính cá nhân và máy tính xách tay.\\
 
-- MS-DOS đã từng rất phổ biến trong suốt thập niên 1980 và đầu thập niên 1990  trước khi Windows 95 ra đời.
+Hệ điều hành này đã chuyển hướng sang Windows từ cuối thập kỷ 1980, và người dùng máy tính cá nhân chủ yếu sử dụng các phiên bản Windows mới hơn.
+MS-DOS vẫn tồn tại trong một số ứng dụng nhúng và thiết bị cổ điển, nhưng không có thống kê chính xác về số lượng sử dụng.\\
 
-\section{Mục đích sử dụng hệ điều hành}
+Vui lòng kiểm tra nguồn tin tức và thống kê hiện tại để có thông tin chi tiết và cập nhật về sự phổ biến của các hệ điều hành này tính đến thời điểm hiện tại.
+
+\section{Mục đích sử dụng}
+\subsection{MS-DOS (Microsoft Disk Operating System)}
+\begin{itemize}
+	\item Máy Tính Cá Nhân:
+	\begin{itemize}
+		\item MS-DOS xuất hiện trong giai đoạn đầu của máy tính cá nhân, đặc biệt là trên các máy tính tương thích IBM PC.
+		\item Dùng cho mục đích văn phòng, xử lý văn bản, và quản lý tệp tin.
+	\end{itemize}
+	\item Trò Chơi và Giải Trí: MS-DOS là nền tảng cho nhiều trò chơi kinh điển như Prince of Persia, Doom, và Civilization. Giải trí thông qua giao diện dòng lệnh và trải nghiệm đơn giản.
+	\item Hỗ Trợ Ứng Dụng Doanh Nghiệp: Sử dụng trong môi trường doanh nghiệp để thực hiện các tác vụ quản lý cơ bản
+\end{itemize}
 \subsection{Linux}
-- Hệ điều hành máy chủ (Server OS): Linux thường được sử dụng rộng rãi như một hệ điều hành máy chủ. Các phiên bản như Ubuntu Server, CentOS, hoặc Debian thường được triển khai để quản lý máy chủ web, máy chủ cơ sở dữ liệu, và các dịch vụ mạng khác.\\
-
-- Phát triển và Lập trình: Linux cung cấp một môi trường lý tưởng cho nhà phát triển và lập trình viên. Nó đi kèm với nhiều công cụ và thư viện mã nguồn mở, cũng như môi trường dòng lệnh mạnh mẽ, giúp tối ưu hóa quá trình phát triển và kiểm thử phần mềm.\\
-
-- Hệ điều hành máy tính cá nhân (Desktop OS): Một số bản phân phối Linux như Ubuntu, Fedora, và Linux Mint có thể được cài đặt và sử dụng trên máy tính cá nhân như một hệ điều hành chính\\
-
-- Hệ thống nhúng: Linux thường được sử dụng trong các hệ thống nhúng, nơi tài nguyên hạn chế và độ ổn định cao là quan trọng. Điều này bao gồm các ứng dụng như điều khiển thiết bị, IoT (Internet of Things), và các hệ thống nhúng khác. \\
-
-- Học tập và Nghiên cứu: Linux là một lựa chọn phổ biến cho việc học tập và nghiên cứu trong lĩnh vực Công nghệ thông tin. Đối với sinh viên và người nghiên cứu, sử dụng Linux có thể mang lại trải nghiệm thực tế với hệ thống và mạng máy tính.\\
-
-- An toàn và Bảo mật: Do tính bảo mật cao, nhiều người sử dụng Linux để xây dựng hệ thống an toàn và bảo mật. Cộng đồng mã nguồn mở liên tục kiểm tra và cập nhật mã nguồn, giúp giảm thiểu rủi ro an ninh.
-\begin{center}
-	\includegraphics[height=10cm]{img/Ảnh10.png}
-	\includegraphics[height=8cm]{img/Ảnh11.png}
-\end{center}
-\textbf{Ưu điểm:}
 \begin{itemize}
-	\item Tính ổn định cao
-	\item Khả năng bảo mật tốt
-	\item Khá linh hoạt
-	\item Tính chủ động
-	\item Chi phí rẻ
+	\item Máy Chủ và Hệ Thống Lớn:
+	\begin{itemize}
+		\item Linux là lựa chọn phổ biến cho máy chủ web, máy chủ ứng dụng, và hệ thống lớn do tính ổn định và bảo mật cao.
+		\item Sử dụng trong các trung tâm dữ liệu và các dịch vụ điện toán đám mây.
+	\end{itemize} 
+	\item Phát Triển Phần Mềm và Mã Nguồn Mở:
+		\begin{itemize}
+		\item Linux là một nền tảng phổ biến cho phát triển phần mềm và hỗ trợ mô hình mã nguồn mở.
+		\item Người phát triển sử dụng Linux để xây dựng các ứng dụng và hệ thống mới.
+		\end{itemize}
+	\item Hệ Thống Nhúng và loT:
+		\begin{itemize}
+		\item Linux được tích hợp trong các thiết bị nhúng và hệ thống loT.
+		\item Linh hoạt và tùy chỉnh, phù hợp với nhiều loại thiết bị.
+		\end{itemize}
+	\item Máy Tính Cá Nhân và Người Dùng Cuối:
+		\begin{itemize}
+		\item Ngày nay, các phiên bản Linux dành cho người dùng cá nhân như Ubuntu, Fedora đang ngày càng phổ biến.
+		\item Cung cấp trải nghiệm đồ họa và chức năng tương tự như các hệ điều hành khác.
+		\end{itemize}
+	\item Hệ Thống An Toàn: Sử dụng trong các hệ thống an ninh ma và các ứng dụng yêu cầu bảo mật cao.
 \end{itemize}
-\textbf{Tính ổn định cao} \\
-Có thể một lúc sử lý nhưng khối lượng công viêc lớn và ít xảy ra tình trạng mất ổn định, xuống cấp. Đó là là sự lựa chọn hoàn hảo dành cho những doanh nghiệp nhờ vào việc hạn chế những rủi ro xảy ra một cách tối đa của hệ điều hành.\\
-
-\textbf{Khả năng bảo mật tốt}\\
-Linux đang được xây dựng dựa vào nền tảng của Unix - 1 hệ điều hành đa nhiệm. Chính vì vậy chỉ root user và quản trị mới có khả năng cấp quyền truy cập dùng những cách của quan trọng. Hiện tại VPS Linux có độ bảo mật vô cùng cao. \\
-
-\textbf{Khá linh loạt}\\
-Nó cho phép mở rộng cũng như hoàn toàn có thể hoạt động tốt với bất cứ một máy tính nào. Hệ điều hành sẽ không bị kiến trúc máy và bộ xử lý ảnh hưởng. \\
-
-\textbf{Tính chủ động }\\
-Người dùng hoàn toàn có thể kết hợp tự do và lựa chọn những gì mà bản thân cảm thấy phù hợp. Ở thời điểm hiện tại doanh nghiệp không cần phải lo lắng tới vấn đề bản quyền.\\
-
-\textbf{Nhược điểm: }
-\begin{itemize}
-	\item Những phần mềm được hỗ trợ ở thời điểm hiện tại vẫn còn đang hạn chế. 
-	\item Một số những nhà sản xuất hiện tại vẫn không phát triển driver để hỗ trợ cho nền tảng Linux.
-\end{itemize}
-\subsection{MS-DOS}
-- Mặc dù hệ điều hành MS-DOS thường được đánh giá thấp bởi tính phức tập và khó sử dụng, tuy nhiên, nó vẫn còn một số ưu điểm sau đây:\\
-- Khuyến khích sáng tạo và suy nghĩ bởi cách làm việc trực tiếp với các dòng lệnh\\
-- Cung cấp khả năng cứu hộ máy tính từ những sự cố đơn giản đến những sự cố phức tạp hơn\\
-- Xử lý các thao tác được các tác vụ đa dạng.\\
-
-- Mặc dù không còn được sử dụng phổ biến như trước đây, hệ điều hành DOS vẫn được sử dụng và phát triển dưới tên gọi FreeDOS để tương thích với các phiên bản Windows hiện tại sau khi Microsoft ngừng hỗ trợ DOS.\\
--FreeDOS đã được tích hợp sẵn trên một số máy tính hiện nay và cung cấp cho người dùng giải pháp khắc phục các sự cố hệ thống khi Windows không thể hoạt động. Mặc dù không còn được sử dụng nhưng giá trị của DOS đã đóng góp quan trọng vào việc phát triển hệ điều hành Windows.\\
-
 %Nội dung chính 
 \newpage
 \addcontentsline{toc}{section}{Nội dung chính}
@@ -186,405 +163,777 @@ Người dùng hoàn toàn có thể kết hợp tự do và lựa chọn nhữn
 	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{Nội dụng chính}}}
 \end{center}
 \setcounter{section}{0}
-\section{Cấu trúc hệ thống}
-Cấu trúc hệ thống của một hệ điều hành bao gồm nhiều thành phần quan trọng để quản lý và điều khiển các tài nguyên của máy tính.
+\section{I.	Cấu trúc hệ điều hành}
 \subsection{Linux}
-- Hệ thống Linux có thể được có là một loại kim tự tháp như minh họa trong Hình 10-1. Ở dưới cùng là phần cứng, bao gồm CPU, bộ nhớ, đĩa, một màn hình và bàn phím, và các thiết bị khác. Chạy trực tiếp trên phần cứng là hệ điều hành. Chức năng của nó là kiểm soát phần cứng và cung cấp một giao diện lời gọi hệ thống cho tất cả các chương trình. Những lời gọi hệ thống này cho phép các chương trình người dùng tạo ra và quản lý các tiến trình, tệp, và các tài nguyên khác.
+ Ngoài nắm rõ hệ điều hành Linux là gì chúng tacũng nên biết về cấu trúc của hệ điều hành này. Linux là hệ điều hành có cấu trúc phân lớp. Các thành phần được kết hợp với nhau và hình thành một hệ thống hoạt động đầy đủ nhất.
 \begin{center}
-	\includegraphics[height= 8cm]{img/Ảnh12.png}
+	\includegraphics[height= 12cm]{img/Ảnh01.jpg}\\
+	\textit{Cấu trúc hệ điều hành Linux}
 \end{center}
-- Các chương trình thực hiện lời gọi hệ thống bằng cách đặt các đối số vào thanh ghi (hoặc đôi khi, trên ngăn xếp), và sử dụng các lệnh trap để chuyển từ chế độ người dùng sang chế độ hạt nhân.\\
 
-- Vì không có cách nào để viết một lệnh trap trong C, một thư viện được cung cấp, với một thủ tục cho mỗi lời gọi hệ thống. Những thủ tục này được viết bằng ngôn ngữ lắp ráp nhưng có thể được gọi từ C. Do đó, để thực hiện lời gọi hệ thống read, một chương trình C có thể gọi thủ tục thư viện read. Một điều nhỏ nữa, là giao diện thư viện, và không phải giao diện lời gọi hệ thống, được chỉ định bởi POSIX.\\
+Cấu trúc hệ điều hành linux bao gồm: 
 
-- Ngoài hệ điều hành và thư viện lời gọi hệ thống, tất cả các phiên bản của Linux cung cấp một số lượng lớn các chương trình tiêu chuẩn, trong đó có một số được quy định bởi tiêu chuẩn POSIX 1003.2, và một số khác khác nhau giữa các phiên bản Linux. Các chương trình này bao gồm bộ xử lý lệnh (shell), trình biên dịch, trình soạn thảo, chương trình xử lý văn bản, và các tiện ích thao tác tệp. Do đó, chúng ta có thể nói về ba giao diện khác nhau với Linux: giao diện lời gọi hệ thống thực sự, giao diện thư viện, và giao diện được hình thành bởi bộ chương trình tiện ích tiêu chuẩn.\\
-
-- Giao diện người dùng đồ họa (GUI) trên Linux được hỗ trợ bởi Hệ thống cửa sổ X, hay phổ biến là X11 hoặc chỉ đơn giản là X, mà xác định các giao thức truyền thông và hiển thị để điều khiển cửa sổ trên màn hình bitmap cho hệ thống UNIX và các hệ thống giống UNIX. X server là thành phần chính kiểm soát các thiết bị như bàn phím, chuột và màn hình và chịu trách nhiệm chuyển hướng đầu vào hoặc chấp nhận đầu ra từ các chương trình khách.\\
-
-- Khi làm việc trên các hệ thống Linux thông qua giao diện đồ họa, người dùng có thể sử dụng chuột để chạy ứng dụng hoặc mở tệp, kéo và thả để sao chép tệp từ một vị trí sang vị trí khác, và còn nhiều thao tác khác. Ngoài ra, người dùng có thể gọi một chương trình mô phỏng terminal, hoặc xterm, cung cấp giao diện dòng lệnh cơ bản cho hệ điều hành. Mô tả của nó được đưa ra trong phần tiếp theo.\\
-
-- Hệ điều hành Linux dựa trên mô hình hạt nhân (kernel) Linux. Cấu trúc của hệ thống điều hành này bao gồm các thành phần chính sau: 
+ 
 \begin{itemize}
-	\item Hạt nhân (Kernel): Là bộ phận quản lý tài nguyên phần cứng, điều phối việc truy cập phần cứng và quản lý tiến trình trong hệ thống.
-	\item Thư viện hỗ trợ (Libraries): Chứa các tập tin nhị phân và mã nguồn cho các chương trình trên hệ điều hành. Cung cấp một tập hợp các chức năng mà các ứng dụng có thể sử dụng để truy cập các chức năng của hệ thống.
-	\item Shell (Giao diện dòng lệnh): Shell là giao diện giữa người dùng và hệ điều hành Linux. Cung cấp một cách để người dùng tương tác và điều khiển các hoạt động trên hệ thống thông qua các lệnh dòng lệnh.
-	\item Tiện ích hệ thống (System Utilities): Các tiện ích cung cấp các công cụ hỗ trợ cho quản lý hệ thống như trình quản lý tác vụ, trình quản lý file, tiện ích mạng và nhiều công cụ khác để quản lý và điều chỉnh các cài đặt hệ thống
-	\item Môi trường đồ họa (Graphical Environment): Linux cung cấp nhiều môi trường đồ họa như GNOME, KDE, Xfce và Unity, cho phép người dùng tương tác với hệ điều hành thông qua giao diện đồ họa.
-	\item Ứng dụng: Linux hỗ trợ một loạt các ứng dụng, từ các ứng dụng văn phòng, trình duyệt web, trình phát nhạc, trình chơi game, đồ họa, cho đến các ứng dụng phục vụ cho lập trình, quản lý cơ sở dữ liệu và nhiều lĩnh vực khác. Đây chỉ là một tổng quan về cấu trúc hệ điều hành Linux. Mỗi phiên bản hệ điều hành có thể có những thành phần bổ sung hoặc sửa đổi riêng biệt.
+	\item Kernel (Nhân):  Phần quan trọng nhất trong hệ điều hành Linux có vai trò quản lý tài nguyên trong phần cứng như: Bộ vi xử lý, bộ nhớ, thiết bị lưu trữ, thiết bị ngoại vi, định vị. Qua đó các phần mềm có thể truy cập và dùng. Nhân linux gồm 4 chức nắng :
+	\begin{itemize}
+		\item Quản lý thiết bị: Một hệ thống có nhiều thiết bị được kết nối với nó như CPU, thiết bị nhớ, card âm thanh, card đồ họa,…. Một nhân lưu trữ tất cả dữ liệu liên quan đến tất cả các thiết bị trong trình điều khineer thiết bị ( nếu không có nhân này sẽ không thể để điều khiển các thiết bị). Do đó kernel biết thiết bị có thể làm gì và thao tác như thế nào để mang lại hiệu suất tốt nhất. Nó cũng quản lý giao tiếp giữa tất cả các thiết bị. Kernel có một số quy tác nhất định mà tất cả các thiết bị phải tuân theo.
+		\item Quản lý bộ nhớ: Một chức nang khác mà kernel phải quản lý là quản lý bộ nhớ. Kernel theo dõi bộ nhớ đã sử dụng và chưa sử dụng và đảm bảo rằng các tiến trình không được thao tác dữ liệu của nhau bằng địa chỉ bộ nhớ ảo.
+		\item Quản lý quy trình: Trong quy trình, nhan quản lý chỉ định đủ thời gian và ưu tiên cho các quy trình trước khi xử lý CPU cho các quy trình khác. Nó cũng xử lý thông tin bảo mật và quyền sở hữu.
+		\item Xử lý lệnh gọi hệ thống: Xử lý lệnh gọi hệ thống có nghĩa là một lập trình viên có thể viết một truy vấn hoặc yêu cầu hạt nhân thực hiện một tác vụ
+	\end{itemize}
+	\item Thư viện hệ thống(System Libraries)
+	\begin{itemize}
+		\item Thư viện hệ thông là các chương trình đặc biệt giúp truy cập các tính năng của hạt nhân. Một hạt nhân phải được kích hoạt để thực hiện một tác vụ và việc kích hoạt này được thực hiện bởi các ứng dụng. Nhưng các ứng dụng phải biết cách đặt lệnh gọi hệ thông vì mỗi hạt nhân có một nhóm lệnh gọi hệ thống khác nhau.
+		\item Các lập trình viên đã phát triên một thư viện tiêu chuẩn của các thủ tục để giao tiếp với các hạt nhân. Mỗi hệ điều hành hỗ trợ các tiêu chuẩn này, và sau đó các tiêu chuẩn này được chuyển sang các lệnh gọi hệ thống cho hệ điều hành đó.
+		\item Thư viện hệ thống nỏi tiếng nhất dành cho Linux là Glibc(Thư viện GNU C).
+	\end{itemize}
+	\item Công cụ hệ thống(System Tools)
+	\begin{itemize}
+		\item Hệ điều hành Linux có một tập hợp các công cụ tiện ích, thường là các lệnh đơn giản. Nó là một phần mềm mà dự án GNU đã viết và xuất bản theo giấy phép nguồn mở của họ để phần mềm được cung cấp miễn phí cho tất cả người dùng
+		\item Với sự trợ giúp của cá lệnh, bạn có thể truy cập tệp của mình, chỉnh sửa và thao tác dữ liệu trong thư mục hoặc tệp của bận, thay đổi vị trí của tệp hoặc bất cứ thứ gì
+	\end{itemize}
+	\item Giao diện người dùng
+	\begin{itemize}
+		\item Linux có nhiều giao diện người dùng, bao gồm cả CLI ( thông qua terminal) và GUI (thông qua các môi trường desktop như GNOME hoặc KDE). Bash là một trong những shelll phổ biến nhất trên Linux
+		\item Shell: Là nơi chứa các dòng lệnh và cung cấp cho người dùng giao diện để nhập các dòng lệnh yêu cầu hệ thống thực hiện. Hiện có khá nhiều loại Shell nhưng bash shell là phổ biến nhất.
+	\end{itemize}
+	\item hệ tệp : Linux hỗ trợ nhiều hệ thống tệp như ext4, XFS, Btrfs. Dữ liệu được tổ chức thành các thư mục và tệp, với mối thư mục và tệp có một đường dẫn duy nhất từ các thư mục gốc(/).
+	\item Bộ khởi động : Linux sử dụng trình khởi động như GRUB để quản lý quá trình khỏi động. Trình khỏi động này chịu trách nhiệm cho việc chọn kernel cần khởi động và truyền các tham số cần thiết cho kernel.
+	\item Phần mềm quản lý gói: Hệ thống Linux thường sử dụng quản lý gói như APT(Deabian, Ubuntu) hoặc YUM(Red Hat, CentOS) để cài đặt và quản lý phần mềm
+	\item Phân quyền: Linux sử dụng hệt hống phân quyền mạnh mẽ dựa trên nguyên tắc “tất cả mọi thứ là tệp”. Người quản trị có thể quyết định quyền truy cập của người dùng và nhóm đối với các tệp và thư mục
 \end{itemize}
-
+--> Cấu trúc của hệ điều hành Linux rất linh hoạt và có nhiều phần tương tác để cung cấp một môi trường hệ thống mạnh mẽ cho người sử dụng và quản trị viên
 \subsection{MS-DOS}
-- MS-DOS (Microsoft Disk Operating System) là một hệ điều hành dòng lệnh phổ biến của Microsoft trong những năm 1980 và 1990. Dưới đây là cấu trúc tổ chức hệ thống của MS-DOS: 
+Hệ điều hành MS-DOS là một hệ điều hành đơn nhiệm và không có khả năng đa người dùng. 
+\begin{center}
+	\includegraphics[height= 12cm]{img/Ảnh02.jpg}\\
+	\textit{Cấu trúc tầng của MS-DOS}
+\end{center}
+Cấu trúc chính của MS-DOS:
 \begin{itemize}
-	\item Kernal(Hạt nhân): Hạt nhân của MS-DOS thực hiện các chức năng cơ bản của hệ điều hành, chẳng hạn như quản lý bộ nhớ, tương tác với phần cứng, và thực hiện các lệnh cơ bản.
-	\item MBR (Master Boot Record): MBR là một vùng nhớ đặc biệt nằm ở đầu đĩa cứng, chứa thông tin khởi động ban đầu cho hệ điều hành.
-	\item Boot Sector: Boot sector là phần đầu tiên của ổ đĩa mà hệ thống cần đọc để khởi động. Nó chứa code máy ảo (Bootstrap Loader) để chuyển quyền điều khiển từ MBR sang hệ điều hành.
-	\item File Allocation Table (FAT): FAT là một bảng lưu trữ thông tin về cách mà các file và thư mục được lưu trữ trên đĩa. Nó giúp hệ điều hành xác định vị trí vật lý của các file và thư mục trong hệ thống tập tin.
-	\item File System: File system xác định cách thức tổ chức, quản lý và lưu trữ các file và thư mục. MS-DOS sử dụng hệ thống tập tin FAT (FAT12, FAT16 hoặc FAT32).
-	\item Command Interpreter (COMMAND.COM): Command interpreter là chương trình chính để thực thi các lệnh được nhập từ bàn phím. Nó đọc các lệnh, thực thi chúng và hiển thị kết quả trên màn hình.
-	\item Device Drivers: Device drivers là các chương trình phần mềm cho phép hệ điều hành giao tiếp với các thiết bị phần cứng như bàn phím, màn hình, máy in, ổ đĩa, vv.
-	\item Utilities: MS-DOS cung cấp một số các tiện ích dòng lệnh để quản lý file, thư mục, đĩa và thực hiện các tác vụ khác nhau như sao chép, xóa, di chuyển, đổi tên file, vv. Đây chỉ là một cái nhìn tổng quan về cấu trúc hệ thống MS-DOS và mỗi phiên bản có thể có những đặc điểm và cấu trúc riêng biệt.
+	\item Kernel: MS-DOS sử dụng kernel đơn giản để quản lý tài nguyên hệ thống. Kernel thường được tỉa lên từ file `IO.SYS` hoặc `MSDOS.SYS` khi hệ thống khởi động
+	\item Giao diện người dùng: Giao diện chính của MS-DOS là dòng lệnh (Command-Line Interface-CLI). Người dùng sử dụng bàn phím để nhập các lệnh và tương tác với hệ thống
+	\item Hệ thống tệp(File System): MS-DOS sử dụng hệ thống tệp FAT. Sắp xếp dữ liệu thành các cluster và một bảng FAT giữ thông tin về vị trí của các cluster trên đĩa
+	\item Bộ tải hệ thống : MS-DOS sử dụng chương trình bộ tải thường là `IBMBIO.COM` hoặc `IO.SYS` để nạp kernel vào bộ nhớ khi hệ thống khởi động
+	\item Shell:  MS-DOS có một shell chính `COMMAND.COM` để xử lý các lệnh người dùng và quản lý các tác vụ hệ thống cơ bản
+	\item Utilities:  để thực hiện các công việc như sao lưu, phân vùng ổ đĩa, định dạng ổ đĩa, …
+	\item Interrypts và BIOS Calls:  để thực hiện các chức năng cơ bản như đọc / ghi vào đĩa, hiển thị ký tự trên màn hình, … Và để MS-DOS tương tác với phần cứng
 \end{itemize}
+--> Cấu trúc MS-DOS khá đơn giản so với các hệ diều hành hiện đại. Chủ yếu tập trung vào việc cung cấp môi trường dòng lệnh đơn giản và quản lý tài nguyên cơ bản của máy tính cá nhân
 \subsection{So sánh}
-Cấu trúc hệ thống của Linux và MS-DOS có nhiều điểm khác nhau do tiến trình phát triển và mục đích sử dụng khác nhau. Dưới đây là một số điểm khác biệt chính:
+
 \begin{enumerate}
-	\item Hạt nhân (Kernel):
+	\item Kiến trúc hạ tầng
 	\begin{itemize}
-		\item [--] Linux: Sử dụng hạt nhân Linux, mở và mã nguồn mở.
-		\item [--] MS-DOS: Sử dụng hạt nhân MS-DOS, không phải mã nguồn mở.
+		\item Linux:
+		\begin{itemize}
+			\item Hệ điều hành đa người dùng và đa nhiệm
+			\item Kiến trúc được xây dựng dựa trên UNIX
+			\item Hỗ trợ nhiều người sử dụng và quá trình chạy đồng thời
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Hệ điều hành đơn nhiệm đơn người dùng
+			\item Thiết kế đơn giản, chỉ chạy một ứng dụng tại một thời điểm
+		\end{itemize} 
 	\end{itemize}
-	\item Cấu trúc tệp (File System):
+	\item Giao diện người dùng
+		\begin{itemize}
+		\item Linux:
+		\begin{itemize}
+			\item Cung cấp giao diện dòng lệnh (CLI) và giao diện đồ họa (GUI)
+			\item Giao diện đồ họa thường được thực hiện bởi các môi trường như GNOME, KDE
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Chủ yếu sử dụng giao diện dòng lệnh Command Prompt
+		\end{itemize} 
+	\end{itemize}
+	\item Quản lý tệp và thư mục
+		\begin{itemize}
+			\item Linux:
+			\begin{itemize}
+				\item Sử dụng hệ thống quản lý tệp hệ thống phân cấp
+				\item Mọi thứ là tệp hoặc thư mục, tổ chức trong cây thư mục duy nhất
+			\end{itemize}
+			\item Ms-Dos:
+			\begin{itemize}
+				\item Sử dụng hệ thống tệp FAT (FAT 16 hoặc FAT 32) 
+				\item Không có khái niệm cây thư mục
+			\end{itemize} 
+		\end{itemize}
+	\item Định dạng tệp và thư mục
+		\begin{itemize}
+		\item Linux:
+		\begin{itemize}
+			\item Hỗ trợ nhiều định dạng tệp như ext4, xfs, …	
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Sử dụng hệ thống tệp FAT (FAT 16 hoặc FAT 32) hoặc NTFS
+		\end{itemize} 
+	\end{itemize}
+	\item Bảo mật
+		\begin{itemize}
+		\item Linux:
+		\begin{itemize}
+			\item Cung cấp hệ thống bảo mật mạnh mẽ với quyền người dùng cấp cao và cấp thấp
+			\item Cơ chế kiểm soát quyền truy cập chi tiết
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Bảo mật kém hơn so với Linux
+			\item Hỗ trợ hạn chế về quản lý quyền hạn người dùng
+		\end{itemize} 
+	\end{itemize}
+	\item Đa nhiệm và ổ đĩa
 	\begin{itemize}
-		\item [--] Linux: Sử dụng hệ thống tệp Linux như ext4, ext3, ext2, xfs, v.v.
-		\item [--] MS-DOS: Sử dụng File Allocation Table (FAT) hoặc New Technology File System (NTFS).
-	\end{itemize}
-	\item Multi-Tasking (Đa nhiệm):
+		\item Linux:
 		\begin{itemize}
-		\item [--] Linux: Hỗ trợ đa nhiệm, cho phép chạy nhiều tiến trình cùng một lúc.
-		\item [--] MS-DOS: Ban đầu hỗ trợ đa nhiệm giới hạn, nhưng không như Linux. Trong các phiên bản sau, Windows đã thay thế MS-DOS làm hệ điều hành chính và hỗ trợ đa nhiệm đầy đủ.
-	\end{itemize}
-	\item Giao diện người dùng:
+			\item Hỗ trợ đa nhiệm và có khả năng làm việc với nhiều loại ổ đĩa và hệ thống tệp khác nhau
+		\end{itemize}
+		\item Ms-Dos:
 		\begin{itemize}
-		\item [--] Linux: Cung cấp giao diện dòng lệnh và giao diện đồ họa (GUI) như GNOME, KDE, Unity, v.v.
-		\item [--] MS-DOS: Ban đầu chỉ có giao diện dòng lệnh, không có giao diện đồ họa. Tuy nhiên, sau đó, Microsoft đã phát triển Windows để cung cấp giao diện đồ họa.
+			\item Chủ yếu hỗ trợ ổ đĩa FAT và có hạn chế trong việc thực hiện đa nhiệm
+		\end{itemize} 
 	\end{itemize}
-	\item Mục đích sử dụng:
+	\item Hệ thống tệp
+	\begin{itemize}
+		\item Linux:
 		\begin{itemize}
-		\item [--] Linux: Thường được sử dụng trong hệ thống máy chủ, máy tính cá nhân và các thiết bị nhúng. Được phát triển với triết lý mã nguồn mở, linh hoạt và bảo mật cao.
-		\item [--] MS-DOS: Ban đầu được phát triển cho máy tính cá nhân, sử dụng chủ yếu trong các ứng dụng đơn giản và trò chơi. Tóm lại, Linux và MS-DOS có những khác biệt về hạt nhân, cấu trúc tệp, đa nhiệm, giao diện người dùng và mục đích sử dụng. Các yếu tố này tạo nên sự khác biệt giữa hai hệ thống này.
+			\item Sử dụng hệ thống tệp ext4 là phổ biến, nhưng hỗ trợ nhiều hệ thống tệp khác nhau
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Sử dụng hệ thống tệp FAT16 hoặc FAT32, và hỗ trợ NTFS từ các phiên bản Windows mới hơn
+		\end{itemize} 
+	\end{itemize}
+	\item Kernel
+	\begin{itemize}
+		\item Linux:
+		\begin{itemize}
+			\item Mã nguồn mở và có khả năng tùy chỉnh cao
+		\end{itemize}
+		\item Ms-Dos:
+		\begin{itemize}
+			\item Đóng và có hạn chế tính tùy chỉnh 
+		\end{itemize} 
 	\end{itemize}
 \end{enumerate}
-\section{Các hàm shell}
+--> Linux và Ms-Dos có những đặc điểm riêng biệt về kiến trúc hệ thống, giao diện người dùng, quản lý tệp và thư mục, bảo mật, đa nhiệm và ổ đĩa. Sự khác biệt này phản ánh sự tiến triển của công nghệ và mục đích và mục đích sử dụng của từng hệ điều hành
+
+\section{Quản lý tiền trình}
+
+\subsection{Quản lý tiến trình (Linux)}
+\subsubsection{Tiến trình}
 \begin{itemize}
-	\item Khái niệm: Shell là một giao diện dòng lệnh cho phép người dùng tương tác với hệ thống bằng cách nhập lệnh từ bàn phím. Nó giúp thực thi các lệnh, quản lý tiến trình, và cung cấp môi trường cho người dùng thao tác với hệ thống.
-	\item Chức năng: Shell chịu trách nhiệm cho việc thực hiện các lệnh, quản lý biến môi trường, và cung cấp các tính năng như scripting để tự động hóa các tác vụ. 
+	\item Tiến trình tiền cảnh
+	\begin{itemize}
+		\item Tiến trình tiền cảnh là một tiến trình đang chạy ở chế độ tiền cảnh, túc là nó đang chiếm quyền sử dụng giao diện của người dùng của hệ điều hành. Điều này nghĩa là một tiến trình tiền cảnh đang chạy, người dùng không thể nhập bất kỳ lệnh nào khác vào hệ điều hành đến khi tiến trình đó hoàn thành.\\
+		vd:   ls-R/
+		\item Trong ví dụ, lệnh sẽ liệt kê hết các thư mục và tệp trong thư mục gốc. Lệnh này mất một lúc phải hoàn thành, vì vậy trong thời gian đó, người dùng không thể nhập bất kỳ lệnh nào khác
+	\end{itemize}
+	\item Tiến trình hậu cảnh
+	\begin{itemize}
+		\item Tiến trình hậu cảnh là một tiến trình đang chạy ở chế độ hậu cảnh, túc là nó đang chiếm quyền sử dụng giao diện người dùng (UI) của hệ điều hành. Điều này có nghĩa là khi một tiến trình hậu cảnh đang chạy, người dùng vẫn có thể nhập bất kỳ lệnh nào khác vào hệ điều hành.
+		\item Để chuyển một tiến trình từ chế độ tiền cảnh sang chế độ hậu cảnh, bạn có thể sử dụng ký tự \& khi bạn khởi động tiến trình.\\
+		vd: ls -R / \&
+		\item Lệnh trên đang ở chế hậu cảnh. Người dùng vẫn có thể nhập các lệnh vào hệ điều hành.
+	\end{itemize}
 \end{itemize}
+\subsubsection{Điều khiển và giám sát tiến trình}
+\begin{itemize}
+	\item Chế độ hiện (foreground) và chế độ ngầm (background)
+	\begin{itemize}
+		\item Chế độ hiện (foreground): Mặc định các tiến trình thực thi tuần tự, tiến trình này thực hiện xong rồi mới đến tiến trình khác.\\
+		vd: \$ emacs
+		\item Chế độ ngầm (background): Cho phép thực tiến trình cha và tiến trình con chạy song song
+		vd:  \$ emaccs \&
+	\end{itemize}
+	\item Sử dụng ps để lấy thông tin trạng thái của tiến trình\\
+	Lệnh ps: Hiển thị các tiến trình \\
+	vd: 
+	\begin{center}
+		\includegraphics[height= 7cm]{img/Ảnh05.png}
+	\end{center}
+	\item Phát tín hiệu cho một chương trình đang chạy\\
+	\textbf{\textit{Sử dụng lệnh kill hủy một tiến trình}}\\
+	Lệnh kill để dừng một tiến trình nào đó\\
+	vd: kill PID\\
+	Với PID là PID của tiến trình nào đó\\
+	\textbf{\textit{Sử dụng lệnh killall hủy một tiến trình}}\\
+	Dùng để hủy tiến trình chạy bằng tên \\
+	vd: killall signal\_demo.pl\\
+	\textbf{\textit{Chạy một tiến trình ở hậu cảnh hoặc tiền cảnh}}\\
+	Khi một tiến trình không sử dụng ký hiệu “\&”, tiến trình đó sẽ chạy ở tiền cảnh. Điều này có nghĩa là shell sẽ chặn và đợi tiến trình kết thúc trước khi trả lại quyền điều khiển\\
+	Khi thêm “\&” vào sau lệnh, tiến trình sẽ chạy ở chế độ hậu cảnh. Shell không chặn và tiếp tục chạy các lệnh khác mà không cần đợi tiến trình kết thúc.\\
+	\textbf{\textit{Tạm dừng tiến trình}}\\
+	Khi nhấn Ctrl+Z khi tiến trình đang chạy ở chế độ tiền cảnh. Tiến trình đó được đưa vào hậu cảnh.\\
+	Lệnh “jobs” để hiển thị trạng thái của các tiến trình đang chạy ở chế độ hậu cảnh.\\
+	vd: \\ 
+	\begin{verbatim}
+		[1] Stopped man ln
+		[2] -Stopped tail
+		[3] +Stopped ls-R/
+	\end{verbatim}
+	Dấu ‘-’ và ‘+’ để chỉ ra tiến trình đang chạy ở foreground\\
+	\textbf{\textit{Đánh thức tiến trình}}
+	Để đánh thức một tiến trình nào đó ở hậu cảnh, người dùng sử dụng lệnh “bg”\\
+	vd:  bg\%<job-number>\\
+	
+	Để chuyển một tiến trình từ hậu cảnh sang chạy trên tiền cảnh, người dùng sử dụng lệnh ‘fg’\\
+	vd:  fg 3 
+	\item Giao tiếp giữa các tiến trình
+	Đôi khi các tiến trình cần trao đổi thông tin cho nhau để xử lý. Một cơ chế được sử dụng khá phổ biến trên Linux là pipe(đường ống).\\
+	Cơ chế đường ống giữa hai tiến trình cho phép định hướng lại đầu ra của tiến trình thứ nhất trở thành đầu vào của tiến trình thứ hai\\
+	Cơ chế đường ống được thiết lập bằng cách sử dụng ký tự: |\\
+	\$ cmd1 | cmd2\\
+	vd: 
+	\begin{center}
+		\includegraphics[height= 3cm]{img/Ảnh06.png}
+	\end{center}
+\end{itemize}
+\subsubsection{Lập kế hoạch các tiến trình}
+\textbf{Sử dụng lệnh at}\\
+Lệnh ‘at’ sử dụng để lên lịch thực hiện các công việc một lần trong tương lại
+vd:  at 20:40\\
+Để xem dung lượng đĩa sử dụng trong toàn bộ file, thư mục của hệ thống sẽ được gọi vào lúc 8:40 p.m\\
+
+Lệnh ‘atrm’ sử dụng để hủy một công việc đã lên lịch dựa trên số thứ tự của công việc đó\\
+vd:  atrm 1 \\
+Câu lệnh trên sẽ hủy công việc có số thứ tự là 1\\
+\textbf{Sử dụng lệnh crontab}\\
+Tiện ích \textbf{Crond} cho phép sắp xếp một câu lệnh để thực thi theo một lịch trình định kỳ. Ví dụ. bạn có thể sử dụng cron để xóa các tệp cũ trong /tmp hằng ngày hoặc chạy một tiến trình mỗi ngày hoặc mỗi tuần.\\
+vd:
+\begin{center}
+	\includegraphics[height= 2cm]{img/Ảnh07.png}
+\end{center}
+* Xóa các tệp cũ trong thư mục /tmp hằng ngày
+\begin{center}
+	\includegraphics[height= 2cm]{img/Ảnh08.png}
+\end{center}
+Công việc này sẽ chạy vào lúc 0 giờ sáng hằng ngày và xóa tất cả các tệp trong thư mục /tmp có tuổi thọ hơn 7 ngày.
+
+\subsection{Nguồn tham khảo}
+\subsubsection{Tạo và xóa bỏ các quá trình của user và của hệ thống}
+MS-DOS chỉ thị dòng lệnh bằng cách thực hiện trên màn hình. Mỗi lệnh bao gồm một tập và các chỉ thị. Để yêu cầu MS-DOS thi hành một lệnh, người dùng gõ lệnh và nhấn Enter. Nếu người dùng muốn gõ lại một lệnh, hãy nhấn ESC là có thể bắt đầu lại.\\
+MS-DOS có những phím chỉnh để lặp lại hoặc thay đổi một lệnh:\\
+\begin{itemize}
+	\item F1: Hiển thị lệnh trước đó (mỗi lượt ra 3 ký tự) 
+	\item F3: Hiển thị toàn bộ lệnh trước đó (một lượt)
+\end{itemize}
+Cách thúc MS-DOS đáp ứng một lệnh\\
+\begin{itemize}
+	\item MS-DOS sẽ thông báo khi nào lệnh được hoàn tất hay có lỗi khi gõ lệnh
+	\item MS-DOS có sẵn những chỉ dẫn hỗ trợ cho mọi lệnh để tra cứu. Chỉ cần gõ tên lệnh theo sau là ‘/?’ hoặc gõ HELP theo sau là một lệnh
+\end{itemize}
+\subsubsection{Ngừng, hủy bỏ một quá trình}
+\textbf{Gọi thực hiện một chương trình}
+\begin{itemize}
+	\item \textbf{\textit{Gọi thực hiện một chương trình}}\\
+	Có 4 cách gọi thực hiện chương trình
+	\item Nếu một chương trình được liệt kê trong nhóm có mặt trong danh sách thì chọn một chương trình
+	\item Gọi thực hiện 1 chương trình bằng cách chọn tập tin hay một tập tin liên kết với chương trình đó
+	\item Dùng lệnh RUN  từ menu file và viết tập tin chương trình
+	\item Làm việc tại dấu nhắc đợi lệnh
+	\item \textbf{\textit{Chuyển đổi giữa các chương trình}}
+	\begin{itemize}
+		\item [] \textit{Chạy nhiều chương trình}
+		\item [] B1: Chạy chương trình đầu tiên bằng cách đúp chuột
+		\item [] B2: Bấm CTRL + ESC để trở lại MS-DOS Shell. Chương trình vừa gọi xuất hiện trên Active Task list
+		\item [] B3: Chạy chương trình 2 bằng cách đúp chuột\\
+		
+		\item [] \textit{Thêm 1 chương trình và Active task list}
+		\item [] B1: Chọn tệp tin chương trình muốn thêm và Active Task list
+		\item [] B2: Giữ phím SHIFT, rồi bấm đúp chuột\\
+		
+		\item [] \textit{Chuyển tới chương khác, từ MS-DOS Shell}
+		\item [] B1: Bấm đúp chuột chương trình trên Active Task list 
+		\item [] B2: Nhấn ENTER\\
+		
+		\item [] \textit{Chuyển từ MS-DOS Shell từ bất cứ chương nào}
+		\item [] Nhấn CTRL+ESC \\
+		
+		\item [] \textit{Kết thúc một chương trình}
+	\end{itemize}
+\end{itemize}
+	\begin{itemize}
+	\item Để rời bỏ một chương trình 
+	\item Chuyển sang MS-DOS Shell
+	\item Từ Active Task list chọn chương trình muốn rời bỏ
+	\item Từ menu file, chọn delete hoặc nhấn DEL
+\end{itemize}
+\subsubsection{Cơ chế đồng bộ các quá trình}
+Nếu người dùng có tập tin thường dùng cùng 1 chương trình nào đó. Để tiết kiệm thời gian bằng cách kết các tập tin với chương trình. Mỗi lần mở tập tin được kết, chương trình sẽ khởi động, kèm theo nạp các tập tin đó\\
+\begin{itemize}
+	\item \textit{Kết các tập tin với một chương trình}
+	\begin{itemize}
+		\item [] B1: Chọn thư mục chứa chương trình muốn kết với một kiểu tập tin
+		\item [] B2: Từ danh sách, chọn tên tệp tin của chương trình ấy
+		\item [] B3: Từ menu file, chọn Associate, hộp thoại Associate file sẽ xuất hiện
+		\item [] B4: Trong hộp Extensions, gõ tên mở rộng của tệp tin muốn kết hợp chương trình
+		\item [] B3: Nhấn OK
+	\end{itemize}
+	\item \textit{Chạy một tập tin đã được kết nối với một chương trình khác}
+		\begin{itemize}
+		\item [] B1: Từ menu file, chọn RUN, hộp thoại Run xuất hiện.
+		\item [] B2: Gõ tên đường dẫn và tên tập tin của chương trình mới
+		\item [] B3: Nhấn OK
+		\end{itemize}
+	\item \textit{Gỡ bỏ một liên kết giữa một chương trình và một kiểu tập tin}
+		\begin{itemize}
+		\item [] B1: Chọn tập tin có liên kết muốn bỏ
+		\item [] B2:Từ menu file, chọn Associate, hộp thoại Associate xuất hiện. Tên chương trình được hiển thị trong hộp thoại văn bản.
+		\item [] B3: Nhấn BACKSPACE để xóa tên chương trình.
+		\item [] B4: Nhấn OK
+		\end{itemize}
+\end{itemize}
+
+
+\section{Các hàm Shell}
 \subsection{Linux}
-- Mặc dù các hệ thống Linux có giao diện người dùng đồ họa, hầu hết các lập trình viên và người dùng có kinh nghiệm vẫn ưa thích một giao diện dòng lệnh, gọi là shell. Thường họ bắt đầu một hoặc nhiều cửa sổ shell từ giao diện người dùng đồ họa và làm việc trực tiếp trong chúng. Giao diện dòng lệnh shell nhanh hơn để sử dụng, mạnh mẽ hơn, dễ mở rộng và không gây mệt mỏi cho người dùng vì phải sử dụng chuột liên tục.\\
+\subsubsection{Shell là gì?}
+Máy tính hiểu ngôn ngữ của 0 và 1 được gọi là ngôn ngữ nhị phân. Trong những ngày đầu của việc tính toán, các chỉ thị được cung cấp bằng ngôn ngữ nhị phân, điều này khó khăn đối với chúng ta để đọc và viết. Do đó, trong hệ điều hành có một chương trình đặc biệt gọi là Shell. Shell chấp nhận các chỉ thị hoặc lệnh của bạn bằng tiếng Anh và dịch chúng thành ngôn ngữ nhị phân của máy tính.\\
 
-- Dưới đây, chúng ta sẽ tóm tắt ngắn gọn về shell bash (bash). Nó được xây dựng chủ yếu dựa trên shell UNIX gốc, Bourne shell (được viết bởi Steve Bourne, tại Bell Labs). Tên của nó là một chữ viết tắt của Bourne Again SHell. Nhiều shell khác cũng được sử dụng (ksh, csh, v.v.), nhưng bash là shell mặc định trong hầu hết các hệ thống Linux.\\
+Shell là trình thông dịch lệnh của Linux\\
+- Thường tương tác với người dùng theo từng câu lệnh\\
+- Shell đọc lệnh từ bàn phím hoặc file\\
+- Nhờ hạt nhân Linux thực hiện lệnh\\
+\begin{center}
+	\includegraphics[height= 4cm]{img/Ảnh09.png}
+	\includegraphics[height= 4cm]{img/Ảnh101.png}
+\end{center}
+\subsubsection{Các loại Shells}
+Các loại Shells đều có chung các chức năng cơ bản như:\\ multitasking, piping và dễ sử dụng.\\
+Có 4 Shells phổ biến nhất:\\
+- The Bourne shell (sh)\\
+- The Korn shell (ksh)\\
+- The C shell (csh)\\
+- Bourne Again shell (bash)\\
 
-- Lệnh có thể nhận các tham số, được chuyển đến chương trình được gọi dưới dạng chuỗi ký tự. Ví dụ, dòng lệnh  :\\
+Mối liên hệ giữa các loại Shells
+\begin{center}
+	\includegraphics[height= 8cm]{img/Ảnh30.png}
+\end{center}
+Để in ra đường dẫn của shell hiện tại đang được sử dụng:
+\$ echo \$SHELL
+\subsubsection{Hàm trong Shell}
+Cấu trúc hàm:
+\begin{center}
+	\includegraphics[height= 8cm]{img/Ảnh40.png}
+\end{center}
+Biến cục bộ (có hiệu lực bên trong hàm): Khai báo từ khóa local\\
+Biến toàn cuc: Khai báo không dùng từ khóa local
+\begin{center}
+	\includegraphics[height= 8cm]{img/Ảnh50.png}
+\end{center}
+Các lệnh của shell\\
 
-cp src dest\\
-
-gọi chương trình cp với hai tham số, src và dest. Chương trình này hiểu tham số đầu tiên là tên của một tệp tin đã tồn tại. Nó tạo một bản sao của tệp tin này và đặt tên bản sao là dest.\\
-
-head -20 file\\
-
-- Cho biết cho head in ra 20 dòng đầu tiên của tệp tin, thay vì số dòng mặc định là 10.\\
-
-ls *.c\\
-
-bảo ls liệt kê tất cả các tệp tin có tên kết thúc bằng .c\\
-
-\textbf{Các hàm sell cơ bản trong Linux:}\\
-
-\begin{enumerate}
-	\item `ls`: Hiển thị danh sách các tệp và thư mục trong thư mục hiện tại.
-	\item `cd`: Đổi thư mục làm việc hiện tại.
-	\item `pwd`: In ra đường dẫn đầy đủ tới thư mục làm việc hiện tại.
-	\item `mkdir`: Tạo mới một thư mục.
-	\item `rm`: Xóa một tệp hoặc thư mục.
-	\item `cp`: Sao chép tệp hoặc thư mục.
-	\item `mv`: Di chuyển tệp hoặc thư mục.
-	\item `cat`: Đọc và in nội dung của một hoặc nhiều tệp lên màn hình.
-	\item `grep`: Lọc các dòng trong tệp dựa trên biểu thức chính quy.
-	\item `chmod`: Thay đổi quyền truy cập của tệp hoặc thư mục.
-	\item `chown`: Thay đổi chủ sở hữu của tệp hoặc thư mục.
-	\item `ps`: Liệt kê các quy trình đang chạy.
-	\item `top`: Hiển thị thông tin về tài nguyên hệ thống và các quy trình đang chạy.
-	\item `sudo`: Thực thi lệnh dưới quyền người dùng thông thường.
-	\item `apt-get` hoặc `yum`: Quản lý gói phần mềm trên các hệ thống dựa trên Debian hoặc Red Hat.
-\end{enumerate}
-
+Lệnh: (lệnh rỗng) tương đương với true\\
+vd: Kiểm tra nếu file fred tồn tại thì không làm gì cả\\
+\begin{center}
+	\includegraphics[height= 5cm]{img/Ảnh60.png}
+\end{center}
+Lệnh exec: Dùng để gọi một lệnh khác và gọi exit khi kết thúc lệnh\\
+vd:\\
+\begin{center}
+	\includegraphics[height= 2cm]{img/Ảnh70.png}
+\end{center}
+Lệnh set: Dùng đẻ gán giá trị cho các biến môi trường \$1,\$2,.. bằng các loại bỏ các khoảng trang không cần thiết và đặt nội dung truyền vào các biến tham số \\
+vd: \\
+\begin{center}
+	\includegraphics[height= 6cm]{img/Ảnh80.png}
+\end{center}
+Lệnh set\\
+vd:\\
+\begin{center}
+	\includegraphics[height= 8cm]{img/Ảnh90.png}
+\end{center}
 \subsection{MS-DOS}
-Dưới đây là một số hàm shell cơ bản của MS-DOS:
-\begin{enumerate}
-	\item CD (Change Directory): Sử dụng để thay đổi thư mục làm việc. Ví dụ: `CD C:$\backslash$folder\_name` sẽ thay đổi thư mục hiện tại thành folder\_name trên ổ C.
-	\item DIR (Directory): Sử dụng để hiển thị danh sách các tập tin và thư mục trong thư mục hiện tại. Ví dụ: `DIR` sẽ hiển thị tất cả các tập tin và thư mục trong thư mục hiện tại.
-	\item COPY: Sử dụng để sao chép tập tin từ vị trí nguồn đến vị trí đích. Ví dụ: `COPY source\_file destination` sao chép tập tin từ nguồn đến đích.
-	\item DEL (Delete): Sử dụng để xóa các tập tin. Ví dụ: `DEL file\_name` xóa tập tin có tên file\_name.
-	\item REN (Rename): Sử dụng để đổi tên tập tin. Ví dụ: `REN old\_file\_name new\_file\_name` đổi tên tập tin từ old\_file\_name thành new\_file\_name.
-	\item MD (Make Directory): Sử dụng để tạo mới một thư mục. Ví dụ: `MD new\_folder\_name` tạo mới một thư mục có tên new\_folder\_name.
-	\item RD (Remove Directory): Sử dụng để xóa một thư mục. Ví dụ: `RD folder\_name` xóa một thư mục có tên folder\_name.
-\end{enumerate}
-\subsection{So sánh}
-Hai hệ điều hành Linux và MS-DOS có các hàm shell khác nhau. Dưới đây là một số so sánh giữa hai hàm shell phổ biến trong hai hệ điều hành này:
-\begin{enumerate}
-	\item Ngôn ngữ lập trình: Hàm shell của Linux được viết bằng ngôn ngữ Bash (Bourne Again Shell), trong khi MS-DOS sử dụng ngôn ngữ lập trình Batch.
-	\item Cú pháp: Cú pháp của các hàm shell khá khác biệt. Ví dụ, để tạo một biến trong Bash, ta sử dụng cú pháp: `variable=value`, trong khi đó trong MS-DOS, ta sử dụng cú pháp: `set variable=value`.
-	\item Các lệnh hệ thống: Hàm shell của Linux cung cấp nhiều lệnh hệ thống mạnh mẽ và linh hoạt, cho phép người dùng tiến hành các tác vụ phức tạp như quản lý quyền truy cập và xử lý dữ liệu. Trong khi đó, hàm shell của MS-DOS hạn chế về các lệnh hệ thống và chủ yếu được sử dụng để thực thi các tệp tin .bat.
-	\item Tính năng mở rộng: Hàm shell của Linux cung cấp nhiều tính năng mở rộng như biến môi trường, chuỗi lệnh, hỗ trợ chuỗi các lệnh và điều hướng dòng lệnh. MS-DOS không cung cấp các tính năng phong phú như vậy và hạn chế trong việc mở rộng chức năng.
-	\item Đa nền tảng: Linux shell có thể chạy trên các hệ điều hành khác nhau như Linux, Unix và macOS. MS-DOS shell chỉ chạy trên hệ điều hành MS-DOS và phiên bản cũ hơn của Windows. Đây chỉ là một số so sánh chung giữa các hàm shell của hai hệ điều hành. Có thể có nhiều sự khác biệt khác, tùy thuộc vào phiên bản cụ thể và cấu hình hệ thống.
-\end{enumerate}
+Dưới đây là một số hàm shell cơ bản của MS-DOS\\
+
+Lệnh CD :Sử dụng để thay đổi thư mục làm việc\\
+vd: C:$\backslash$folder\_name \\
+
+Lệnh DIR :Sử dụng để hiển hiển thị thư mục và tập tin trong thư mục hiện tại\\
+vd: DIR
+
+Lệnh DEL :Xóa các tập tin\\
+vd: DEL file\_name\\
+
+Lệnh REN :Để đổi tên tập tin
+vd: REN old\_file\_name new\_file\_name\\
+
+Lệnh RD: Sử dụng để xóa thu mục
+vd: RD folder\_name
+
 \section{Quản lý bộ nhớ}
-Quản lý bộ nhớ là quá trình kiểm soát việc sử dụng và cấp phát bộ nhớ trong một hệ thống máy tính. Nhiệm vụ của quản lý bộ nhớ là đảm bảo rằng các phần mềm và quá trình có thể sử dụng bộ nhớ hiệu quả mà không gây xung đột hay lãng phí tài nguyên.
 \subsection{Linux}
-- Linux chia sẻ nhiều đặc điểm của các sơ đồ quản lý bộ nhớ của các triển khai Unix khác, nhưng cũng có các tính năng độc đáo riêng. Nhìn chung, sơ đồ quản lý bộ nhớ Linux khá phức tạp.\\
-\begin{center}
-	\includegraphics[height= 9cm]{img/Ảnh13.png}
-\end{center}
-- Sơ đồ quản lý bộ nhớ Linux bao gồm hai thành phần chính: bộ nhớ ảo của quá trình và phân bổ bộ nhớ hạt nhân.\\
-
-\textbf{Bộ nhớ ảo của quá trình}\\
-
-Mỗi quá trình trong Linux có một không gian địa chỉ ảo riêng, không liên quan đến địa chỉ vật lý của bộ nhớ vật lý thực tế. Quá trình sử dụng bộ nhớ ảo để lưu trữ dữ liệu và mã của mình.\\
-
-Linux sử dụng một số kỹ thuật để quản lý bộ nhớ ảo của quá trình, bao gồm:
-
+\subsubsection{Phân chương cố định}
+Trong hệ thống Linux, quản lý bộ nhớ có thể được chia thành các khu vực cố định để phục vụ các mục đích cụ thể. Dưới đây là một số khu vực quản lý bộ nhớ cố định trong Linux:
 \begin{itemize}
-	\item Trang hóa: Bộ nhớ ảo của quá trình được chia thành các trang, mỗi trang có kích thước 4 KB. Các trang này có thể được lưu trữ ở bất kỳ đâu trong bộ nhớ vật lý thực tế.
-	\item Liên kết trang: Khi một quá trình yêu cầu truy cập vào một trang bộ nhớ ảo không được lưu trữ trong bộ nhớ vật lý, Linux sẽ liên kết trang đó vào bộ nhớ vật lý.
-	\item Thay đổi trang: Khi một quá trình không còn cần truy cập vào một trang bộ nhớ ảo, Linux sẽ thay đổi trang đó ra khỏi bộ nhớ vật lý.
+	\item User Space và Kernel Space: Hệ thống Linux chia bộ nhớ thành hai không gian chính: User Space và Kernel Space. User Space là nơi các ứng dụng và tiến trình người dùng chạy, trong khi Kernel Space là nơi hạt nhân (kernel) chạy.
+	\item Stack: Mỗi tiến trình có một stack riêng. Stack được sử dụng để lưu trữ biển cục bộ và thông tin về các hàm
+	\item Heap:Đây là khu vực bộ nhớ được cấp phát động cho các biến và cấu trúc dữ liệu khi chương trình đang chạy.
+	\item Text (Code):  Khu vực này chứa mã máy của chương trình được thực thi. Nó là bất biến và được chia sẻ giữa các tiến trình để tôi ưu hóa bộ nhớ.
+	\item Data (Initialized và Uninitialized): Chứa dữ liệu đã khởi tạo và chưa khởi t Dữ liệu đã khởi tạo chứa giá trị khởi tạo trước khi chương trình chạy, còn dữ liệu chưa khởi tạo có giá trị mặc định.
+\end{itemize}
+\subsubsection{Phân chương động}
+Trong hệ thống Linux, quản lý bộ nhớ có thể được phân chia thành các phần chương động để đáp ứng các yêu cầu cụ thể của các tiến trình và ứng dụng. Dưới đây là một số khái niệm và phân chương động quan trọng:
+\begin{itemize}
+	\item Heap (Đống):
+	\begin{itemize}
+		\item Là một khu vực trong bộ nhớ được sử dụng để cấp phát động bởi các hàm như `malloc', 'calloc', 'realloc', và 'free'.
+		\item Chứa dữ liệu không được xác định trước, và các tiến trình có thể cấp phát và giải phóng bộ nhớ từ Heap khi cần.
+	\end{itemize}
+	\item Stack (Ngăn Xếp):
+	\begin{itemize}
+		\item Dùng để quản lý các biến cục bộ và các hàm gọi.
+		\item Các biển và giá trị của hàm được lưu trữ trên Stack.
+	\end{itemize}
+	\item BSS (Block Started by Symbol):
+	\begin{itemize}
+		\item Là một phần của bộ nhớ chứa các biến chưa được khởi tạo (zero-initialized data) trong chương trình.
+		\item Dữ liệu trong BSS được đặt thành giá trị mặc định (thường là 0).
+	\end{itemize}
+	\item Data Segment (DSEG):
+	\begin{itemize}
+		\item Chứa các biến đã được khởi tạo và có giá trị cụ thể.
+		\item Có thể được chia thành một phần có the nia sẻ (Shared Data Segment) và một phần không thể chia sẻ.
+	\end{itemize}
+	\item Text Segment(TSEG)
+	\begin{itemize}
+		\item + Chứa mã máy của chương trình và thông thường là duy nhất (read-only).
+		\item Các hàm và câu lệnh máy được lưu trữ ở đây.
+	\end{itemize}
+	\item Memory-Mapped Files:
+	\begin{itemize}
+		\item Cho phép các tiến trình truy cập vào các tệp tin dưới dạng bộ nhớ.
+		\item Sử dụng để tôi ưu hóa việc đọc và ghi dữ liệu từ và đến tệp tin
+	\end{itemize}
+	\item Memory-Mapped I/O: Cho phép bộ nhớ của chương trình được ánh xạ vào không gian địa chỉ, giúp tiếp cận dữ liệu tương tự như các tệp tin thông thường.
+	\item Cấp Phát Động (Dynamic Allocation):
+	\begin{itemize}
+		\item Cấp phát động bằng các hàm như 'malloc', 'calloc, và 'realloc'.
+		\item Cung cấp linh hoạt trong việc quản lý và sử dụng bộ nhớ.
+	\end{itemize}
+	\item Shared Memory: Cho phép nhiều tiến trình chia sẻ một phần của bộ nhớ, giúp họ truy cập và cập nhật dữ liệu chung.
+	\item Virtual Memory:
+	\begin{itemize}
+		\item Hệ thống quản lý bộ nhớ ảo, cung cấp ảo hóa bộ nhớ để mỗi tiến trình có cảm giác mình đang sử dụng một phần không gian bộ nhớ riêng biệt.
+		\item Các phần trên đây thường được quản lý và dõi bởi kernel của hệ thống, và sự hiểu biết về cách bộ nhớ được tổ chức giúp người phát triển và quản trị hệ thống tối ưu hóa hiệu suất và tài nguyên.
+	\end{itemize}
 \end{itemize}
 
-\textbf{Phân bổ bộ nhớ hạt nhân}\\
 
-Hạt nhân Linux quản lý bộ nhớ vật lý bằng cách sử dụng hai cơ chế chính: phân bổ trang và phân bổ khối.\\
 
+\subsubsection{Phân trang}
+Phân trang là một kỹ thuật quản lý bộ nhớ hiệu suất cao được sử dụng trong hệ thống Linux. Nó cho phép hệ điều hành chia bộ nhớ vật lý thành các trang cố định (thường có kích thước là 4 KB) và quản lý trang này trên đĩa cứng. Dưới đây là mô tả cơ bản về cách phân trang hoạt động trong Linux:
 \begin{itemize}
-	\item \textbf{Phân bổ trang}\\
-	Phân bổ trang là cơ chế phân bổ bộ nhớ hạt nhân cơ bản. Nó sử dụng một bảng phân trang để ánh xạ các địa chỉ ảo vào các địa chỉ vật lý. Các địa chỉ ảo trong không gian địa chỉ hạt nhân được chia thành các trang, mỗi trang có kích thước 4 KB.\\
-	
-	Khi hạt nhân cần phân bổ bộ nhớ, nó sẽ yêu cầu bộ phận phân bổ trang cấp cho nó một trang trống. Bộ phận phân bổ trang sẽ tìm một trang trống trong bộ nhớ vật lý và cấp cho hạt nhân.\\
-	\item \textbf{Phân bổ khối}\\
-	Phân bổ khối là một cơ chế phân bổ bộ nhớ hạt nhân hiệu quả hơn phân bổ trang. Nó sử dụng các khối bộ nhớ lớn hơn, thường là 4 MB hoặc 16 MB.\\
-	
-	Khi hạt nhân cần phân bổ một khối bộ nhớ lớn, nó sẽ yêu cầu bộ phận phân bổ khối cấp cho nó một khối trống. Bộ phận phân bổ khối sẽ tìm một khối trống trong bộ nhớ vật lý và cấp cho hạt nhân.
+	\item Trang Vật Lý: Bộ nhớ vật lý chia thành các trang cố định với kích thước thường là 4 KB (có thể thay đổi tùy thuộc vào kiến trúc hệ thống).
+	\item Trang Ẩn và Trang Hiện:
+	\begin{itemize}
+		\item Mỗi trang có thể ở trạng thái "ẩn" (chưa được đặt vào bộ nhớ vật lý) hoặc "hiện" (đã được đặt vào bộ nhớ vật lý).
+		\item Khi một tiến trình cần truy cập dữ liệu trên một trang chưa được đặt vào bộ nhớ, hệ điều hành sẽ thực hiện một trang ẩn.
+	\end{itemize}
+	\item Trang An (Page Fault):
+	\begin{itemize}
+		\item Khi một trang chưa được đặt vào bộ nhớ vật lý (trang ẩn), xảy ra một trang ẩn (page fault).
+		\item Hệ điều hành sẽ phải đọc trang từ đĩa cứng và đặt nó vào bộ nhớ vật lý.
+	\end{itemize}
+	\item Trang Thay Thế (Page Replacement):
+	\begin{itemize}
+		\item Khi bộ nhớ vật lý đã đầy, hệ điều hành c↓ hay thế một trang hiện tại để có chỗ cho một trang mới.
+		\item Có nhiều thuật toán thay thế trang như LRU (Least Recently Used), FIFO (First-In-First-Out), và NRU (Not Recently Used).
+	\end{itemize}
+	\item Swap Space:
+	\begin{itemize}
+		\item Swap space là một khu vực trên đĩa cứng được sử dụng để lưu trữ các trang khi chúng không còn chỗ trong bộ nhớ vật lý.
+		\item Khi một trang cần được thay thế, nó có thể được đẩy ra swap space và trang mới được đọc vào bộ nhớ.
+	\end{itemize}
+	\item Mô Hình Vùng Trang: Các trang thường được quản lý theo mô hình vùng trang (page region) để tối ưu hiệu suất và quản lý.
+	\item Hệ Thống Tập Trung (Demand Paging): Hệ thống Linux sử dụng mô hình demand paging, nghĩa là chỉ đọc và đặt trang vào bộ nhớ khi chúng thực sự cần thiết.
+	\item Thống Kê Hiệu Suất:
+	\begin{itemize}
+		\item Hệ thống Linux cung cấp các công cụ như 'vmstat', 'free', và 'sar' để theo dõi và đánh giá hiệu suất phân trang và sử dụng bộ nhớ.
+		\item Phân trang là một cơ sở quan trọng của quản lý bộ nhớ trong Linux và nhiều hệ điều hành khác, giúp tối ưu hiệu suất của hệ thống và quản lý tài nguyên một cách hiệu quả. 
+	\end{itemize}
 \end{itemize}
 
-\subsection{MS-DOS}
-- MS-DOS (Microsoft Disk Operating System) là một hệ điều hành dòng lệnh phổ biến từ những năm 1980 đến 1990. Dưới đây là các khái niệm cơ bản về quản lý bộ nhớ và quản lý file của MS-DOS:\\
+\subsection{Phân đoạn}
+Trong hệ điều hành Linux, quản lý bộ nhớ được thực hiện thông qua việc chia bộ nhớ thành các phân đoạn khác nhau. Các phân đoạn này được sử dụng để lưu trữ các loại dữ liệu và có các đặc tính và mục đích khác nhau. Dưới đây là một số phân đoạn quan trọng:
+\begin{itemize}
+	\item Phân đoạn hệ thống (System Segment)
+	\begin{itemize}
+		\item Chứa mã lệnh hệ điều hành và dữ liệu quan trọng.
+		\item Thường tải vào bộ nhớ từ 512K đến 640K, tùy thuộc vào cấu hình cụ thể của hệ thống.
+	\end{itemize}
+	\item Bảng vectơ ngắn (Interrupt Vector Table - IVT)
+	\begin{itemize}
+		\item Năm ở địa chỉ bắt đầu của bộ nhớ (0-4K).
+		\item Chứa địa chỉ của các dịch vụ ngăn (interrupt services) của hệ điều hành.
+	\end{itemize}
+	\item DOS Data Area (DDA)
+	\begin{itemize}
+		\item Chứa các biến và dữ liệu hệ thống của DOS.
+		\item Năm ở địa chỉ 4K đến 5K trong bộ nhớ.
+	\end{itemize}
+	\item Bộ nhớ dự trữ cho hạt chương trình (Transient Program Area - TPA)
+	\begin{itemize}
+		\item Chứa chương trình và dữ liệu ứng dụng.
+		\item Bắt đầu từ địa chỉ 1MB và có thể mở rộng xuống dưới tận 640K, tùy thuộc vào cấu hình.
+	\end{itemize}
+	\item Upper Memory Area (UMA)
+	\begin{itemize}
+		\item Vùng bộ nhớ từ 640K đến 1MB.
+		\item Đôi khi được sử dụng cho các phần mềm mở rộng hoặc các trình quản lý bộ nhớ của bên thứ ba.
+	\end{itemize}
+	\item Conventional Memory
+	\begin{itemize}
+		\item Vùng từ 0 đến 640K được chia thành các khối nhỏ để chứa các chương trình và dữ liệu.
+		\item Các chương trình ứng dụng thường chạy trong phạm vi này.
+	\end{itemize}
+\end{itemize}
+--> Quản lý bộ nhớ trong MS-DOS thường gặp hạn chế do giới hạn 640K cho ứng dụng và sự phức tạp khi sử dụng bộ nhớ cao. Các công cụ như Himem.sys, EMM386.exe và các tiện ích của bên thứ ba thường được sử dụng để mở rộng khả năng quản lý bộ nhớ của MS-DOS.
 
-- MS-DOS, hay Microsoft Disk Operating System, là một hệ điều hành dòng dòng lệnh được phát triển bởi Microsoft. Phần quản lý bộ nhớ của MS-DOS xuất hiện trong các phiên bản cổ điển như MS-DOS 1.x đến MS-DOS 6.x. Dưới đây là một số chi tiết về quản lý bộ nhớ của MS-DOS:
+\subsection{Bộ nhớ ảo}
+Hệ điều hành MS-DOS không có hỗ trợ bộ nhớ ảo như các hệ điều hành hiện đại. Khái niệm về bộ nhớ ảo thường đi kèm với khả năng tạo ra một không gian bộ nhớ ảo lớn hơn so với bộ nhớ vật lý có sẵn trên hệ thống. Hệ điều hành MS-DOS thường xuyên phải đối mặt với giới hạn bộ nhớ 640K và không cung cấp chức năng bộ nhớ ảo như các hệ điều hành như Windows, Linux hoặc macOS.
+Tuy nhiên, có một số tiện ích và trình quản lý bộ nhớ của bên thứ ba được phát triển để mở rộng khả năng quản lý bộ nhớ của MS-DOS. Một số trong số đó có thể giúp tạo ra một ảo trang (virtual page) giả mạo, nhưng nó không phải là bộ nhớ ảo như ta hiểu trong ngữ cảnh của các hệ điều hành hiện đại.\\
+
+Các công cụ và tiện ích này bao gồm:
+\begin{itemize}
+	\item Himem.sys và EMM386.exe:
+		\begin{itemize}
+		\item Himem.sys là một trình điều khiển chính trong MS-DOS để hỗ trợ quản lý bộ nhớ cao (Upper Memory).
+		\item EMM386.exe là một trình quản lý bộ nhớ mở rộng, cung cấp khả năng sử dụng bộ nhớ chia sẻ và mở rộng.
+		\end{itemize}
+	\item Virtual Memory Manager (VMM):
+		\begin{itemize}
+		\item VMM của Quarterdeck là một sản phẩm từ bên thứ ba cung cấp khả năng giả mạo bộ nhớ ảo trong môi trường MS-DOS.
+		\item Tuy nhiên, đối với một trải nghiệm bộ nhớ ảo đầy đủ, người dùng thường phải chuyển sang các hệ điều hành được thiết kế với sự hỗ trợ bộ nhớ ảo, chẳng hạn như Windows, Linux hoặc macOS.
+		\end{itemize}
+\end{itemize}
+
+\section{Quản lý File}
+\subsection{Linux}
+\subsubsection{Các khái niệm}
+Trong hệ điều hành Linux, mọi thứ, kể cả thiết bị và tệp tin, được biểu diễn như một tệp tin. Dưới đây là một số khái niệm quan trọng về tệp tin trong Linux:
 \begin{enumerate}
-	\item Bộ nhớ hợp lý (Conventional memory): Đây là phần bộ nhớ đầu tiên mà MS-DOS sử dụng, nằm trong phạm vi 640KB (kilobyte) đầu tiên của bộ nhớ. Đây là nơi lưu trữ các chương trình ứng dụng và dữ liệu cần thiết để thực thi các tác vụ cơ bản.
-	\item Upper memory area (UMA): Vùng nhớ trên cùng, từ 640KB đến 1MB, được sử dụng để lưu trữ các trình điều khiển thiết bị và các phần mềm mở rộng.
-	\item Extended memory: MS-DOS không trực tiếp quản lý bộ nhớ mở rộng, nhưng nó có thể tận dụng nó thông qua các trình điều khiển nâng cao như HIMEM.SYS hoặc EMM386.EXE. Các trình điều khiển này giúp chuyển các chương trình và dữ liệu không thể chứa trong bộ nhớ hợp lý vào bộ nhớ mở rộng.
-	\item XMS (Extended Memory Specification): Đây là một giao diện cho phép truy cập vào bộ nhớ mở rộng trên MS-DOS. Nó cho phép các chương trình sử dụng bộ nhớ trên 1MB thông qua các lệnh như XMS\_ALLOC và XMS\_FREE.
-	\item EMS (Expanded Memory Specification): EMS cung cấp một phương pháp tiếp cận bộ nhớ mở rộng dựa trên bộ nhớ chuyển tiếp. Các card bộ nhớ mở rộng EMS có thể được sử dụng để cung cấp bộ nhớ trong môi trường MS-DOS.
-	\item Quản lý bộ nhớ tập tin: MS-DOS sử dụng hệ thống tập tin FAT (File Allocation Table) để quản lý việc lưu trữ và truy cập dữ liệu trên đĩa cứng. Các tệp tin và thư mục được quản lý bằng cách sử dụng các thông tin trong bảng FAT. Tóm lại, MS-DOS quản lý bộ nhớ bằng cách sử dụng bộ nhớ hợp lý, vùng nhớ trên cùng, bộ nhớ mở rộng thông qua các trình điều khiển, giao diện mở rộng XMS và EMS, cùng với quản lý tệp tin trong hệ thống tập tin FAT
+	\item Tệp Tin:\\
+	File Types:\\
+	.
+	Trong Linux, có nhiều loại tệp tin, bao gồm:\\
+	Regular Files: Chứa dữ liệu văn bản hoặc nhị phân.\\
+	Directories (Thư mục): Chứa danh sách các tệp tin và thư mục khác.\\
+	Symbolic Links (Liên kết tượng trưng): Một loại liên kết trỏ đến một tệp tin hoặc thư mục khác.\\
+	. Devices (Thiết bị): Đại diện cho các thiết bị phần cứng.\\
+	. Special Files: Đại diện cho các thiết bị như /dev/null, /dev/random, v.v.\\
+	File Permissions:\\
+	Mỗi tệp tin và thư mục có ba nhóm quyền: quyền đọc (r), quyền ghi (w), và quyền thực thi (x), được xác định cho chủ sở hữu, nhóm và người dùng khác.\\
+	Path:
+	Đường dẫn (path) của một tệp tin là địa hoặc vị trí của nó trong hệ thống tệp tin. Đường dẫn tuyệt đối bắt đầu từ thư mục gốc (/) và đường dẫn tương đối bắt đầu từ thư mục hiện tại.
+	\item Cấu Trúc Thư Mục và Tệp Tin:
+	Hệ Thống Tệp Tin Linux (File System Hierarchy): \\
+	Thư mục gốc:/\\
+	. Thư mục chứa chương trình thực thi: '/bin
+	Thư mục cấu hình: '/etc\\
+	Thư mục chứa thư mục home cá nhân của người dùng: "/home'\\
+	Thư mục chứa các thư viện: '/lib và /lib64'
+	. Thư mục chứa mã nguồn hệ thống: '/usr/src'\\
+	Thư mục chứa các tệp tin lưu trữ tạm thời:"/tmp"\\
+	Thư mục chứa các ứng dụng cài đặt của hệ thống: /sbin\\
+	Thư mục chứa tệp tin hệ thống: '/boot\\
+	Thư mục chứa các ứng dụng cài đặt bổ sung: '/opt'\\
+	Thư mục home của người dùng: '/home/username'\\
+	Dấu chấm (.) và Dấu hai chấm (..):\\
+	*... đại diện cho thư mục hiện tại.\\
+	**... đại diện cho thư mục cha.\\
+	\item Mở Rộng Tên Tệp Tin và Dấu Sao (*):\\
+	Một số ký tự đặc biệt như dấu sao (*) có thể được sử dụng để khớp nhiều tệp tin hoặc thư mục.
+	\item Lệnh Tệp Tin và Thư Mục:\\
+	'ls': Liệt kê nội dung thư mục.\\
+	'cp': Sao chép tệp tin hoặc thư mục.\\
+	mv: Di chuyển hoặc đổi tên tệp tin và thư mục.\\
+	*rm*: Xóa tệp tin hoặc thư mục.\\
+	mkdir': Tạo thư mục mới.\\
+	chmod': Thay đổi quyền truy cập của tệp tin hoặc thư mục.\\
+	Cấu trúc và quản lý tệp tin trong Linux có tính linh hoạt cao và đa dạng, cho phép người dùng tận dụng nhiều tính năng và công cụ mạnh mẽ của hệ điều hành này.
 \end{enumerate}
-\subsection{So sánh}
-
-$\bullet$ \textbf{Quản lý bộ trang:}\\
-
-- Linux sử dụng quản lý bộ trang ảo trong đó các trang bộ nhớ có thể được chuyển đổi giữa bộ nhớ vật lý và bộ nhớ ảo. Nó cung cấp khả năng quản lý nhiều bộ nhớ vật lý và giao tiếp với bộ nhớ ảo một cách hiệu quả.\\
+\subsubsection{Các phương pháp truy cập file}
+Dưới đây là một số phương pháp để truy cập tệp tin trong hệ điều hành Linux:
+\begin{enumerate}
+	\item Dòng Lệnh: Sử dụng các lệnh dòng lệnh như 'ls', 'cd`, `cp', 'mv', 'rm', 'mkdir để liệt kê, di chuyển, sao chép, đổi tên, xóa và tạo thư mục.
+	\item Trình Quản Lý Tệp Tin Đồ Họa: Sử dụng các trình quản lý tệp tin đồ họa như Nautilus (đôi với GNOME), Dolphin (đôi với KDE), hoặc Thunar (đối với XFCE).
+	\item Ứng Dụng Soạn Thảo Văn Bản:Mở và chỉnh sửa tệp tin văn bản bằng các trình soạn thảo như Vim, Nano, Emacs hoặc các trình soạn thảo đồ họa như Gedit.
+	\item Ứng Dụng Xem Hình Ảnh hoặc Video:Sử dụng các ứng dụng xem hình ảnh hoặc video để mở tệp tin đa phương tiện.
+	\item Ứng Dụng Đọc Tài Liệu:Mở tệp tin văn bản hoặc tài liệu bằng các ứng dụng đọc tài liệu như Evince, Okular, hoặc Adobe Reader.
+	\item Kết Hợp với Lệnh Find:Sử dụng lệnh `find để tìm kiếm tệp tin trong hệ thống.
+	\item Thao Tác Trực Tuyến:
+	\item Sử Dụng Đường Dẫn URL:Sử dụng các dịch vụ lưu trữ trực tuyến như Dropbox, Google Drive, hoặc OneDrive để truy cập và quản lý tệp tin từ xa.
+	\item Quản Lý Tệp Tin qua SSH:Sử dụng giao thức như ftp://`, `ssh://', hoặc smb://` để truy cập tệp tin từ xa.
+	\item Ứng Dụng Chỉnh Sửa Hình Ảnh hoặc Âm Thanh:Sử dụng các ứng dụng chỉnh sửa hình ảnh hoặc âm thanh để làm việc với các loại tệp tin đặc biệt.
+	\item Sử Dụng File Manager Trong Terminal:Sử dụng lệnh 'xdg-open' hoặc 'gnome-open' để mở tệp tin hoặc thư mục bằng cửa số mặc định trong môi trường đồ họa.
+	\item Sử Dụng Đường Dẫn URL: Sử dụng các giao thức như ftp: //`, `ssh://`, hoặc smb: // để truy cập tệp tin từ xa.
 	
-- MS-DOS không có khái niệm về bộ nhớ ảo và quản lý bộ trang. Nó chỉ hoạt động trực tiếp với bộ nhớ vật lý và không có cơ chế nào cho phép chia sẻ bộ nhớ giữa các quá trình hoặc ứng dụng khác nhau. \\
+	Các phương pháp này cung cấp sự linh hoạt cho người dùng Linux để truy cập và quản lý tệp tin theo nhiều cách khác nhau, dựa vào nhu cầu và ưu tiên của họ.
 	
-$\bullet$ \textbf{Quản lý phân vùng bộ nhớ:}\\
-
-- Linux hỗ trợ quản lý nhiều phân vùng bộ nhớ với khả năng gán địa chỉ vật lý cụ thể cho từng phân vùng. Điều này giúp tối ưu việc sử dụng bộ nhớ và cho phép các ứng dụng chạy trên Linux tương tác với bộ nhớ một cách linh hoạt.\\
-
-- MS-DOS không hỗ trợ quản lý phân vùng bộ nhớ. Toàn bộ bộ nhớ sẽ được sử dụng chung cho tất cả các ứng dụng và quá trình.\\
-
-$\bullet$ \textbf{Quản lý đa nhiệm:}\\
-
-- Linux hỗ trợ chế độ đa nhiệm, cho phép nhiều quá trình hoặc ứng dụng chạy đồng thời trên một hệ thống. Nó sẽ phân chia thời gian CPU giữa các quá trình để đảm bảo sự công bằng và hiệu suất tốt.\\
-
-- MS-DOS không hỗ trợ đa nhiệm đầy đủ. Chỉ có thể chạy một ứng dụng trong một thời điểm và chuyển đổi giữa các ứng dụng được thực hiện thủ công.
-\begin{center}
-\begin{tabular}{|p{5cm}|p{5.5cm}|p{5.5cm}|}
-	\hline 
-	Đặc điểm &  Linux &  MS-DOS \\
-	\hline 
-	Mô hình quản lý bộ nhớ & Trang & Phân đoạn \\
-	\hline 
-	Kích thước phân đoạn & Không ôn định & Cố định \\
-	\hline 
-	Ưu điểm & Hiệu quả & Đơn giản, hiệu quả \\
-	\hline 
-	Nhược điểm & Khó khăn trong việc quản lý bộ nhớ trống & Không sử dụng hiệu quả bộ nhớ trống \\
-	\hline 
-\end{tabular}
-\end{center}
-Tóm lại, hệ thống Linux có một bộ quản lý bộ mạnh mẽ hơn so với MS-DOS, bao gồm quản lý bộ trang, quản lý phân vùng bộ nhớ và hỗ trợ đa nhiệm. Điều này cho phép Linux làm việc tốt hơn trong việc quản lý bộ nhớ, tối ưu hóa sử dụng bộ nhớ và hỗ trợ cùng lúc nhiều ứng dụng chạy trên hệ thống. 
-\section{Quản lý file}
-\subsection{Linux}
-\begin{center}
-	\includegraphics[height= 10cm]{img/Ảnh14.png}
-\end{center}
-Hình ảnh mô tả quản lý file ảo của Linux\\
-
-Hình ảnh này mô tả cách Linux quản lý file ảo của các quá trình.
-
-\begin{itemize}
-	\item Bộ nhớ vật lý: Bộ nhớ vật lý là bộ nhớ thực tế trên máy tính.
-	\item Bộ nhớ ảo: Bộ nhớ ảo là bộ nhớ ảo được cung cấp cho các quá trình.
-	\item Bảng phân trang: Đây là cấu trúc dữ liệu ánh xạ giữa các địa chỉ ảo và các địa chỉ vật lý.
-	\item Bộ nhớ hoán đổi: Đây là bộ nhớ tạm thời được sử dụng để lưu trữ các trang bộ nhớ ảo của các quá trình không hoạt động hoặc không cần thiết.
-\end{itemize}
-\textbf{Quá trình}\\
-
-Mỗi quá trình trong Linux có một không gian địa chỉ ảo riêng. Không gian địa chỉ ảo này là một tập hợp các địa chỉ ảo mà quá trình có thể sử dụng để truy cập vào dữ liệu và mã của mình.\\
-
-\textbf{Bảng phân trang}\\
-
-Bảng phân trang là một cấu trúc dữ liệu trong bộ nhớ chính của quá trình. Bảng phân trang ánh xạ giữa các địa chỉ ảo trong không gian địa chỉ ảo của quá trình sang các địa chỉ vật lý trong bộ nhớ vật lý.\\
-
-Khi một quá trình cần truy cập vào dữ liệu hoặc mã của mình, nó sử dụng một địa chỉ ảo. Hệ điều hành sẽ sử dụng bảng phân trang của quá trình đó để ánh xạ địa chỉ ảo sang địa chỉ vật lý của trang bộ nhớ vật lý chứa dữ liệu hoặc mã đó.\\
-
-\textbf{Bộ nhớ hoán đổi}\\
-
-Bộ nhớ hoán đổi là một loại bộ nhớ tạm thời được sử dụng để lưu trữ các trang bộ nhớ ảo của các quá trình không hoạt động hoặc không cần thiết. Bộ nhớ hoán đổi thường được lưu trữ trên đĩa cứng.\\
-
-Nếu hệ điều hành cần bộ nhớ vật lý để chạy một quá trình, nhưng bộ nhớ chính đã đầy, nó có thể thay đổi ánh xạ của các trang bộ nhớ ảo của các quá trình không hoạt động hoặc không cần thiết sang các trang bộ nhớ hoán đổi.\\
-
-\textbf{Các thành phần chính của quản lý file ảo của Linux bao gồm:}
-\begin{itemize}
-	\item Bộ nhớ vật lý: Bộ nhớ vật lý là phần cứng của máy tính mà các quá trình sử dụng để lưu trữ dữ liệu và mã của chúng.
-	\item Bộ nhớ ảo: Bộ nhớ ảo là một không gian địa chỉ ảo mà các quá trình có thể sử dụng để truy cập vào dữ liệu và mã của chúng.
-	\item Bảng phân trang: Bảng phân trang là một cấu trúc dữ liệu trong bộ nhớ chính của quá trình. Bảng phân trang ánh xạ giữa các địa chỉ ảo trong không gian địa chỉ ảo của quá trình sang các địa chỉ vật lý trong bộ nhớ vật lý.
-	\item Bộ nhớ hoán đổi: Bộ nhớ hoán đổi là một loại bộ nhớ tạm thời được sử dụng để lưu trữ các trang bộ nhớ ảo của các quá trình không hoạt động hoặc không cần thiết.
-\end{itemize}
-\textbf{Cách thức hoạt động}\\
-
-Khi một quá trình cần truy cập vào dữ liệu hoặc mã của mình, nó sử dụng một địa chỉ ảo. Hệ điều hành sẽ sử dụng bảng phân trang của quá trình đó để ánh xạ địa chỉ ảo sang địa chỉ vật lý của trang bộ nhớ vật lý chứa dữ liệu hoặc mã đó.\\
-
-Nếu trang bộ nhớ vật lý chứa dữ liệu hoặc mã đó không được lưu trữ trong bộ nhớ chính, hệ điều hành sẽ tải trang đó vào bộ nhớ chính từ bộ nhớ hoán đổi.\\
-
-\textbf{Ưu điểm}\\
-
-\begin{itemize}
-	\item Nó cho phép các quá trình sử dụng nhiều bộ nhớ hơn so với lượng bộ nhớ vật lý có sẵn trên máy tính.
-	\item Nó giúp cải thiện hiệu suất của hệ thống bằng cách giảm số lần hệ điều hành cần chuyển đổi các trang bộ nhớ vật lý.
-	\item Nó giúp cải thiện khả năng mở rộng của hệ thống bằng cách cho phép chạy nhiều quá trình hơn cùng một lúc.
-\end{itemize}
-\textbf{Nhược điểm}\\
-\begin{itemize}
-	\item Nó có thể làm giảm hiệu suất của hệ thống nếu hệ điều hành cần thường xuyên truy cập vào bộ nhớ hoán đổi.
-	\item Nó có thể làm giảm khả năng bảo mật của hệ thống nếu các trang bộ nhớ ảo không được bảo vệ đúng cách.
-\end{itemize}
-
+\end{enumerate}
 \subsection{MS-DOS}
-MS-DOS sử dụng hệ thống file FAT (File Allocation Table) để quản lý các file trên đĩa. Dưới đây là các khái niệm quan trọng:\\
-
-- File: Là một tập hợp các thông tin (dữ liệu), được lưu trữ trên đĩa theo một cấu trúc nhất định. Cùng với tên file, mỗi file có một định dạng mở rộng (ví dụ: .txt, .exe).\\
-
-- Directory: Là một thư mục chứa file và thư mục con. MS-DOS hỗ trợ cấu trúc thư mục phẳng, trong đó mỗi thư mục có một tên duy nhất.\\
-
-- Path: Là đường dẫn đến một file hoặc thư mục trong hệ thống file. Nó bao gồm tên thư mục cha và tên thư mục hoặc file con, phân cách bằng dấu gạch chéo ngược ($\backslash$).\\
-
-- Access Control: MS-DOS không cung cấp tính năng quản lý quyền truy cập phức tạp. Mọi file trên hệ thống đều có thể truy cập bởi tất cả các người dùng.\\
-
-- Command-line Utilities: MS-DOS cung cấp nhiều lệnh dòng lệnh để quản lý file như COPY, RENAME, DEL, DIR, chúng cho phép người dùng thực hiện các thao tác cơ bản trên file và thư mục.\\
-
-Đây chỉ là những khái niệm cơ bản về quản lý bộ nhớ và quản lý file trong MS-DOS. Hệ điều hành này đã cũ và hiện không còn được sử dụng rộng rãi nhưng có ảnh hưởng sâu sắc trong lịch sử công nghệ thông tin.
-
-\subsection{So sánh}
-Quản lý file của hệ thống Linux và MS-DOS có một số điểm khác biệt như sau:
-\begin{itemize}
-	\item Cấu trúc hệ thống tập tin: Linux sử dụng cấu trúc tập tin phân cấp hỗn hợp gọi là hệ thống tập tin cây (tree file system), trong đó thư mục và tệp tin được tổ chức thành cây con. Trên Linux, tệp tin gốc (root file) được đại diện bởi dấu gạch chéo (/). Trong khi đó, MS-DOS sử dụng cấu trúc tập tin phẳng (flat file system), nghĩa là không có sự phân cấp thư mục, chỉ có thư mục gốc và những tệp tin trong thư mục đó.
-	\item Đường dẫn và khả năng truy cập: Trên Linux, đường dẫn tuyệt đối của một tệp tin bắt đầu từ gốc và đi qua một loạt các thư mục để đến đích. Đường dẫn tương đối bắt đầu từ vị trí hiện tại. Trong khi đó, trong MS-DOS, đường dẫn tuyệt đối và tương đối được xác định bằng cách sử dụng các ký tự đặc biệt như "." để tham chiếu đến thư mục hiện tại và ".." để tham chiếu đến thư mục cha.
-	\item Quyền truy cập: Trên Linux, quản lý quyền truy cập đơn giản hơn với các quyền đọc, ghi và thực thi cho chủ sở hữu, nhóm và tất cả người dùng khác. Trong khi đó, MS-DOS sử dụng hệ thống quyền hạn đơn giản hơn, chỉ có thể điều khiển quyền đọc và ghi cho tệp tin.
-	\item Tên tệp tin: Linux phân biệt chữ hoa và chữ thường trong tên tệp tin, nghĩa là "myfile.txt" và "MyFile.txt" là hai tệp tin riêng biệt. Trong khi đó, MS-DOS không phân biệt chữ hoa và chữ thường, do đó "myfile.txt" và "MyFile.txt" được coi như là cùng một tệp tin.
-	\item Định dạng đĩa và hệ thống tệp tin: MS-DOS sử dụng định dạng FAT (File Allocation Table) để quản lý tệp tin trên đĩa. Trong khi đó, Linux hỗ trợ nhiều hệ thống tập tin như ext4, xfs, và btrfs, mỗi hệ thống tập tin có những đặc điểm riêng.
+\subsubsection{Các khái niệm}
+MS-DOS (Microsoft Disk Operating System) là một hệ điều hành đơn nhiệm được phát triển bởi Microsoft trong thập kỷ 1980 và sử dụng rộng rãi trên các máy tính cá nhân trong giai đoạn đầu của lịch sử máy tính cá nhân. Dưới đây là một số khái niệm và đặc điểm cơ bản về file và cấu trúc file trong MS-DOS:
+\begin{enumerate}
+	\item Khái Niệm File:
+	. Trong MS-DOS, file là một tập tin lưu trữ thông tin hoặc dữ liệu. Mỗi file được xác định bằng một tên và có thể có một phần mở rộng (extension) để chỉ định loại dữ liệu. Ví dụ: document.txt".
 	
-\begin{tabular}{|p{5cm}|p{5.5cm}|p{5.5cm}|}
-		\hline 
-	Tính năng &  MS-DOS &  Linux \\
-	\hline 
-	Khả năng mở rộng & Không & Có \\
-	\hline 
-	Bảo mật & Hạn chế & Cao \\
-	\hline 
-	Khả năng bảo trì & Khó & Dễ \\
-	\hline 
-	Khả năng tương thích & Cao & Trung bình \\
-	\hline 
-\end{tabular}
-\textbf{Kết luận}
+	\item Cấu Trúc File:
+	MS-DOS sử dụng một hệ thống tệp FAT (File Allocation Table) để quản lý cấu trúc lưu trữ file trên đĩa. Hệ thống tệp FAT chia đĩa thành các cluster, và thông tin về file được lưu trữ trong các entry của bảng FAT.
+	
+	\item . Tên File:
+	Tên file trong MS-DOS được giới hạn đến 8 ký tự (8.3 format), với phần mở rộng có thể chứa tối đa 3 ký tự. Ví dụ: 'filename.ext'.
+	
+	\item . Thư Mục (Directory):
+	• Thư mục trong MS-DOS là một cách để tổ chức và quản lý các file. Thư mục có thể chứa nhiều file và thư mục con. Tên của thư mục cũng phải tuân theo quy tắc 8.3.
+	
+	\item Đường Dẫn (Path):
+	Đường dẫn trong MS-DOS là cách mô tả vị trí của một file hoặc thư mục trong hệ thống tệp. Ví dụ: 'C:$\backslash$Folder$\backslash$file.txt'.
+	
+	\item Lệnh Duyệt File (DIR):
+	* Lệnh 'DIR' được sử dụng để liệt kê các file và thư mục trong thư mục hiện tại hoặc thư mục được chỉ định.
+	
+	\item Lệnh Tạo Thư Mục (MD) và Xóa Thư Mục (RD):
+	* Lệnh 'MD dùng để tạo một thư mục mới, và lệnh 'RD' dùng để xóa một thư mục.
+	
+	\item . Lệnh Copy và Move:
+	Lệnh COPY được sử dụng để sao chép file, trong khi lệnh 'MOVE' được sử dụng để di chuyển file.
+	
+	\item Lệnh Ren (Rename):
+	* Lệnh 'REN dùng để đổi tên file hoặc thư mục.
+	
+	\item Lệnh Del (Delete):
+	Lệnh 'DEL' dùng để xóa file.
+	
+\end{enumerate}
+Cấu trúc file và các lệnh trong MS-DOS thường giới hạn và đơn giản so với các hệ điều hành hiện đại, nhưng chúng là những yếu tố cơ bản mà người sử dụng MS-DOS phải làm quen khi làm việc với hệ thống tệp của nó.
+\subsubsection{Các phương pháp truy cập file}
+Dưới đây là mô tả các phương pháp truy cập file trong MS-DOS mà không có mã nguồn:
+\begin{enumerate}
+	\item . Lệnh DIR:
+	. Sử dụng lệnh 'DIR' để liệt kê các file và thư mục trong thư mục hiện tại hoặc thư mục được chỉ định.
+	\item Lệnh CD (Change Directory):
+	Sử dụng lệnh "CD' để chuyển đến một thư mục khác.
+	
+	\item Lệnh COPY:
+	Sử dụng lệnh 'COPY để sao chép file từ một vị trí đến vị trí khác.
+	
+	\item Lệnh DEL (Delete):
+	Sử dụng lệnh 'DEL để xóa một hoặc nhiều file.
+	
+	\item Lệnh REN (Rename):
+	Sử dụng lệnh "REN để đổi tên file hoặc thư mục.
+	
+	\item Lệnh MD và RD:
+	Sử dụng lệnh "MD để tạo một thư mục mới và lệnh "RD để xóa một thư mục.
+	
 
-Quản lý file trong Linux được coi là tiên tiến hơn so với Ms-dos. Linux hỗ trợ nhiều tính năng nâng cao hơn, giúp cho việc quản lý file hiệu quả hơn và an toàn hơn.
-\end{itemize}
-\section{Các đặc điểm của 2 hệ thống}
-\subsection{Linux}
-- Linux là một hệ điều hành mã nguồn mở, được phát triển vào những năm 1990 bởi Linus Torvalds.\\
-
-- Giao diện của Linux có thể được đa dạng hóa, từ dòng lệnh cho đến giao diện đồ họa. Hiện nay, các phiên bản Linux thông dụng như Ubuntu, Fedora, và CentOS đều cung cấp giao diện đồ họa dễ sử dụng.\\
-
-- Linux hỗ trợ đa nhiệm, cho phép người dùng chạy nhiều ứng dụng cùng lúc trên một máy tính.\\
-
-- Linux hỗ trợ nhiều định dạng tệp tin như EXT2, EXT3, và EXT4. Hệ thống tệp tin của Linux được thiết kế để xử lý và quản lý file hiệu quả.\\
-
-- Linux có một cộng đồng phát triển mạnh mẽ, với hàng ngàn ứng dụng và công cụ mã nguồn mở sẵn có để tùy chỉnh và mở rộng hệ điều hành.
-
-\subsection{MS-DOS}
-- MS-DOS (Microsoft Disk Operating System) là một hệ điều hành dòng lệnh dựa trên đĩa xuất hiện đầu tiên vào năm \textbf{1981}.\\
-
-- Giao diện của MS-DOS được thiết kế dựa trên dòng lệnh (command-line interface). Người dùng phải nhập các lệnh bằng cách gõ và xử lý qua dòng lệnh.\\
-
-- MS-DOS tập trung vào khả năng chạy các ứng dụng đơn giản và hỗ trợ trò chơi cổ điển.\\
-
-- Định dạng tệp tin chính sử dụng trong MS-DOS là FAT (File Allocation Table). MS-DOS hỗ trợ định dạng tệp tin FAT16 và FAT32.\\
-
-- MS-DOS không hỗ trợ đa nhiệm (Multi-tasking) tức là không thể chạy nhiều ứng dụng cùng lúc trên một máy tính. Nó chỉ tập trung vào việc thực thi một ứng dụng duy nhất mỗi lần.
-
-\subsection{So sánh}
-
+\end{enumerate}
 %Kết luận  
 \newpage
 \addcontentsline{toc}{section}{KẾT LUẬN}
 \begin{center}
 	{\fontsize{30}{14}\selectfont \textbf{\textcolor{red}{KẾT LUẬN}}}
 \end{center}
-MS-DOS phù hợp với các mục đích sử dụng sau:
-\begin{itemize}
-	\item Các máy tính cũ, có cấu hình thấp: MS-DOS là một hệ điều hành nhẹ, tiêu thụ ít tài nguyên hệ thống. Do đó, nó phù hợp với các máy tính cũ, có cấu hình thấp.
-	\begin{center}
-		\includegraphics[height= 9cm]{img/Ảnh15.png}
-	\end{center}
-	\item Các ứng dụng không yêu cầu nhiều tài nguyên hệ thống: MS-DOS là một hệ điều hành đơn giản, không yêu cầu nhiều tài nguyên hệ thống. Do đó, nó phù hợp với các ứng dụng không yêu cầu nhiều tài nguyên hệ thống, chẳng hạn như các ứng dụng văn phòng cơ bản, các trò chơi cổ điển, v.v.
-	\item Các tác vụ quản trị hệ thống: MS-DOS cung cấp một số công cụ quản trị hệ thống mạnh mẽ, chẳng hạn như các công cụ để quản lý tệp, phân vùng đĩa, v.v. Do đó, nó phù hợp với các tác vụ quản trị hệ thống.
-\end{itemize}
-Linux phù hợp với các mục đích sử dụng sau:
-\begin{itemize}
-	\item Các máy tính có cấu hình cao: Linux là một hệ điều hành mạnh mẽ, có thể tận dụng tối đa tài nguyên hệ thống của các máy tính có cấu hình cao.
-	\begin{center}
-		\includegraphics[height= 9cm]{img/Ảnh16.png}
-	\end{center}
-	\item Các ứng dụng yêu cầu nhiều tài nguyên hệ thống: Linux là một hệ điều hành có thể cung cấp nhiều tài nguyên hệ thống cho các ứng dụng yêu cầu nhiều tài nguyên, chẳng hạn như các ứng dụng đồ họa, các ứng dụng xử lý dữ liệu lớn, v.v.
-	\begin{center}
-		\includegraphics[height= 9cm]{img/Ảnh17.png}
-	\end{center}
-	\item Các mục đích phát triển phần mềm: Linux là một hệ điều hành mã nguồn mở, cung cấp một môi trường phát triển phần mềm mạnh mẽ và linh hoạt.
-	\begin{center}
-		\includegraphics[height= 7cm]{img/Ảnh18.png}
-	\end{center}
-	\item Các mục đích bảo mật: Linux là một hệ điều hành bảo mật cao, có thể được sử dụng để tạo ra các máy chủ, thiết bị mạng, v.v. an toàn.\\
-	\begin{center}
-		\includegraphics[height= 9cm]{img/Ảnh19.png}
-	\end{center}
-\end{itemize}
-\begin{tabular}{|p{5cm}|p{5.5cm}|p{5.5cm}|}
-	\hline 
-	Kiểu hệ điều hành &  MS-DOS &  Linux \\
-	\hline 
-	Hệ thông file & FAT & ext4 \\
-	\hline 
-	Mục đích sử dung & Máy tính cũ, cấu hình thấp, không yêu cầu nhiều tài nguyên & Máy cấu hình cao, phát triển phần mềm, bảo mật \\
-	\hline 
-	Bảo mật  & Thấp  & Cao \\
-	\hline 
-	Chi phí & Miễn phí & Miễn phí \\
-	\hline 
-	Linh hoạt & Trung bình & Cao \\
-	\hline 
-	Khả năng mở rộng & Trung bình & Cao \\
-	\hline 
-\end{tabular}
+\setcounter{section}{0}
+\section{Mục đích sử dụng}
+\subsection{Linux}
+Hệ điều hành Linux được phát triển để phục vụ nhiều mục đích khác nhau và có thể được tùy chỉnh linh hoạt để đáp ứng nhu cầu cụ thể của người sử dụng. Dưới đây là một số phiên bản Linux phổ biến và mục đích chính mà chúng thường phù hợp:\\
+\begin{enumerate}
+	\item Ubuntu:
+	\begin{itemize}
+		\item [] Mục đích chung sử dụng máy tính cá nhân và văn phòng.
+		\item [] Dễ sử dụng và cài đặt, thích hợp cho người mới sử dụng Linux.
+		\item [] Có phiên bản dành cho máy chủ (Ubuntu Server) và máy tính xách tay (Ubuntu Desktop).
+	\end{itemize}
+	\item Debian:
+		\begin{itemize}
+		\item [] Stabil và độ tin cậy cao.
+		\item [] Thích hợp cho các máy chủ, đặc biệt là các máy chủ web.
+		\end{itemize}
+	\item Fedora:
+		\begin{itemize}
+		\item [] Sử dụng cho môi trường làm việc máy tính cá nhân.
+		\item [] Cập nhật thường xuyên, chú trọng vào tính năng mới.
+		\end{itemize}
+	\item CentOS:
+		\begin{itemize}
+		\item [] Phiên bản tái tạo từ mã nguồn mở của Red Hat Enterprise Linux (RHEL).
+		\item [] Thích hợp cho môi trường doanh nghiệp và máy chủ.
+		\end{itemize}
+	\item Arch Linux:
+		\begin{itemize}
+		\item [] Hướng đến người dùng có kinh nghiệm và muốn tùy chỉnh hệ thống của mình một cách chi tiết.
+		\item [] Sử dụng hệ thống quản lý gói Pacman.
+		\end{itemize}
+	\item Kali Linux:
+		\begin{itemize}
+		\item [] Được thiết kế cho penetration testing và bảo mật mạng.
+		\item [] Chứa nhiều công cụ dành cho chuyên gia bảo mật.
+		\end{itemize}
+	\item Raspberry Pi OS (Raspbian):
+		\begin{itemize}
+		\item [] Dành cho Raspberry Pi, một máy tính nhỏ và giá rẻ.
+		\item [] Tôi ưu hóa cho việc chạy trên các thiết bị có tài nguyên hạn chế.
+		\end{itemize}
+	\item Slackware:
+		\begin{itemize}
+		\item [] Mang lại trải nghiệm gần với "nguyên trạng" của Linux.
+		\item [] Thích hợp cho người dùng muốn hiểu rõ cách hệ thống Linux hoạt động.
+		\item [] Mỗi phiên bản Linux có những đặc điểm riêng biệt và được tối ưu hóa cho một mục đích cụ thể. 
+		\item [] Việc chọn lựa phiên bản phụ thuộc vào nhu cầu và kinh nghiệm của người sử dụng.
+		\end{itemize}
+\end{enumerate}
 
-
-MS-DOS và Linux là hai hệ điều hành phổ biến được sử dụng trên máy tính cá nhân. Cả hai hệ điều hành đều cung cấp các chức năng cơ bản để quản lý phần cứng máy tính, bao gồm bộ nhớ, bộ xử lý, thiết bị I/O và ổ đĩa. Tuy nhiên, có một số điểm khác biệt quan trọng về cấu trúc hệ thống, mục đích sử dụng và yêu cầu kiến thức của hai hệ điều hành này.\\
-
-MS-DOS là một hệ điều hành đơn giản, dễ sử dụng nhưng có nhiều hạn chế về khả năng mở rộng và bảo mật.\\
-
-Linux là một hệ điều hành mạnh mẽ, linh hoạt và bảo mật hơn nhưng yêu cầu người dùng có kiến thức về hệ điều hành.
-
-
+\subsection{MS-DOS}
+MS-DOS (Microsoft Disk Operating System) là một hệ điều hành dòng lệnh được Microsoft phát triển. MS-DOS thường được sử dụng trên các máy tính cá nhân trong thập kỷ 1980 và đầu thập kỷ 1990, và nó đã đặt nền tảng cho các hệ điều hành Windows sau này. Dưới đây là một số mục đích chính mà MS-DOS đã phù hợp trong quá khứ:
+\begin{enumerate}
+	\item Chạy ứng dụng DOS:\\
+	MS-DOS chủ yếu được thiết kế để chạy các ứng dụng và trò chơi dòng lệnh được phát triển cho môi trường DOS. Nó hỗ trợ việc thực thi các chương trình thông qua các tập lệnh và tệp tin thực thi có đuôi ".exe".
+	\item Quản lý tệp tin và thư mục:\\
+	MS-DOS cung cấp các lệnh cơ bản để quản lý tệp tin và thư mục trên hệ thống tệp tin FAT (File Allocation Table). Người dùng có thể di chuyển, xóa, tạo và đổi tên tệp tin và thư mục.
+	\item Chạy trò chơi và ứng dụng giáo dục:\\
+	Nhiều trò chơi và ứng dụng giáo dục được phát triển để chạy trên MS-DOS. Trong thời kỳ này, nó thường là môi trường chính để trò chơi và các ứng dụng giáo dục.
+	\item Khởi động máy tính nhanh chóng:\\
+	MS-DOS là một hệ điều hành nhẹ và đơn giản, giúp máy tính khởi động nhanh chóng và sử dụng ít tài nguyên so với các hệ điều hành hiện đại.\\
 	
+	Tuy nhiên, do sự giới hạn của giao diện dòng lệnh và khả năng quản lý hệ thống so với các hệ điều hành đồ họa hiện đại, MS-DOS đã bị thay thế bởi các hệ điều hành như Windows, Linux và macOS. Ngày nay, MS-DOS không còn phù hợp cho nhiều mục đích do hạn chế về tính năng và khả năng tương thích với các ứng dụng và phần cứng mới.
+\end{enumerate}	
+
+\section{SO SÁNH}
+\subsection{Linux}
+\begin{enumerate}
+
+	\item Đa Mục Đích và Linh Hoạt\\
+	Cả hai đều linh hoạt và có thể sử dụng cho nhiều mục đích khác nhau, từ máy chủ đến máy tính cá nhân.
+	\item Sự Phổ Biến và Cộng Đồng Hỗ Trợ \\
+	Cả Linux và mục đích sử dụng của nó đều được hỗ trợ mạnh mẽ bởi một cộng đồng lớn và tích hợp nhiều giải pháp và ứng dụng từ cộng đồng.
+	\item Tính Mở Nguồn:\\
+	Linux là hệ điều hành mã nguồn mở, có nghĩa là mã nguồn của nó là công khai và có thể được sửa đổi và phân phối lại.\\
 	
+	Tóm lại, Linux là một hệ điều hành đa mục đích, linh hoạt và có tính mở nguồn, phù hợp cho nhiều ngữ cảnh từ phát triển ứng dụng đến triển khai máy chủ và máy tính cá nhân. Sự phù hợp của Linux phản ánh khả năng của nó để đáp ứng đa dạng nhu cầu của người sử dụng.
+\end{enumerate}
+\begin{enumerate}
+	\item Phong Cách Giao Diện:\\
+	Linux có giao diện dòng lệnh và có thể có giao diện đồ họa (GUI). Ngược lại, MS-DOS chỉ có giao diện dòng lệnh, không có giao diện đồ họa mặc định.
+	\item Phạm Vi Ứng Dụng và Linh Hoạt:\\
+	Linux đã phát triển thành một hệ điều hành đa nhiệm, linh hoạt và có thể phục vụ nhiều mục đích khác nhau. MS-DOS chủ yếu được thiết kế để chạy các ứng dụng DOS và không có tính linh hoạt lớn như Linux.
+	\item Tính Mở Nguồn:\\
+	. Linux là một hệ điều hành mã nguồn mở, trong khi MS-DOS không có tính mở nguồn.
+	\item Tiến Bộ Công Nghệ:\\
+	Linux đã tiếp tục phát triển và thích ứng với các tiến bộ công nghệ mới, trong khi MS-DOS đã dần dần bị thay thế bởi các hệ điều hành Windows và không còn được phát triển tích cực.\\
 	
+	Tóm lại, MS-DOS đã đóng vai trò quan trọng trong lịch sử máy tính cá nhân, đặc biệt trong giai đoạn đầu, nhưng hiện tại đã lạc lõng với sự phát triển của các hệ điều hành hiện đại như Linux. Linux, với tính linh hoạt và khả năng đáp ứng nhiều mục đích, tiếp tục được ưa chuộng và phát triển.
+\end{enumerate}
+
+
+
 \end{document}
