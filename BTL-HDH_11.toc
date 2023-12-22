@@ -41,6 +41,7 @@
 \contentsline {subsubsection}{\numberline {5.1.2}Các phương pháp truy cập file}{23}{}%
 \contentsline {subsection}{\numberline {5.2}MS-DOS}{24}{}%
 \contentsline {subsubsection}{\numberline {5.2.1}Các khái niệm}{24}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Các phương pháp truy cập file}{25}{}%
 \contentsline {section}{KẾT LUẬN}{26}{}%
 \contentsline {section}{\numberline {1}Mục đích sử dụng}{26}{}%
 \contentsline {subsection}{\numberline {1.1}Linux}{26}{}%

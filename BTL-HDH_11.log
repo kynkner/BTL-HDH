@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.1)  22 DEC 2023 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.1)  22 DEC 2023 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,27 +710,27 @@ ng>] (BTL-HDH_11.toc [1])
 \openout4 = `BTL-HDH_11.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
@@ -738,36 +738,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--121
 <img/Ảnh01.jpg, id=29, 469.755pt x 402.00188pt>
 File: img/Ảnh01.jpg Graphic file (type jpg)
 <use img/Ảnh01.jpg>
-Package pdftex.def Info: img/Ảnh01.jpg  used on input line 170.
+Package pdftex.def Info: img/Ảnh01.jpg  used on input line 169.
 (pdftex.def)             Requested size: 398.97826pt x 341.43306pt.
  [6 <./img/Ảnh01.jpg>] [7]
 <img/Ảnh02.jpg, id=38, 453.19313pt x 339.51843pt>
 File: img/Ảnh02.jpg Graphic file (type jpg)
 <use img/Ảnh02.jpg>
-Package pdftex.def Info: img/Ảnh02.jpg  used on input line 210.
+Package pdftex.def Info: img/Ảnh02.jpg  used on input line 209.
 (pdftex.def)             Requested size: 455.77136pt x 341.43306pt.
  [8 <./img/Ảnh02.jpg>] [9] [10]
 <img/Ảnh05.png, id=48, 452.892pt x 186.6975pt>
 File: img/Ảnh05.png Graphic file (type png)
 <use img/Ảnh05.png>
-Package pdftex.def Info: img/Ảnh05.png  used on input line 358.
+Package pdftex.def Info: img/Ảnh05.png  used on input line 357.
 (pdftex.def)             Requested size: 483.16606pt x 199.16928pt.
 
-Overfull \hbox (14.61751pt too wide) in paragraph at lines 358--359
+Overfull \hbox (14.61751pt too wide) in paragraph at lines 357--358
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--375
+Underfull \hbox (badness 10000) in paragraph at lines 359--374
 
  []
 
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 3
-75.
+74.
 (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 380--384
+Underfull \hbox (badness 10000) in paragraph at lines 379--383
 
  []
 
@@ -775,201 +775,201 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--384
 <img/Ảnh06.png, id=55, 452.892pt x 96.96225pt>
 File: img/Ảnh06.png Graphic file (type png)
 <use img/Ảnh06.png>
-Package pdftex.def Info: img/Ảnh06.png  used on input line 394.
+Package pdftex.def Info: img/Ảnh06.png  used on input line 393.
 (pdftex.def)             Requested size: 398.6913pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--402
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
 
  []
 
 <img/Ảnh07.png, id=56, 313.17pt x 36.135pt>
 File: img/Ảnh07.png Graphic file (type png)
 <use img/Ảnh07.png>
-Package pdftex.def Info: img/Ảnh07.png  used on input line 410.
+Package pdftex.def Info: img/Ảnh07.png  used on input line 409.
 (pdftex.def)             Requested size: 493.2071pt x 56.9055pt.
 <img/Ảnh08.png, id=57, 274.02374pt x 33.12375pt>
 File: img/Ảnh08.png Graphic file (type png)
 <use img/Ảnh08.png>
-Package pdftex.def Info: img/Ảnh08.png  used on input line 414.
+Package pdftex.def Info: img/Ảnh08.png  used on input line 413.
 (pdftex.def)             Requested size: 470.79735pt x 56.9055pt.
 [12 <./img/Ảnh06.png> <./img/Ảnh07.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 420--422
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
 [13 <./img/Ảnh08.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--469
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 499--503
+Underfull \hbox (badness 10000) in paragraph at lines 498--502
 
  []
 
 <img/Ảnh09.png, id=71, 452.892pt x 96.96225pt>
 File: img/Ảnh09.png Graphic file (type png)
 <use img/Ảnh09.png>
-Package pdftex.def Info: img/Ảnh09.png  used on input line 504.
+Package pdftex.def Info: img/Ảnh09.png  used on input line 503.
 (pdftex.def)             Requested size: 531.58841pt x 113.81102pt.
 <img/Ảnh101.png, id=72, 452.892pt x 99.9735pt>
 File: img/Ảnh101.png Graphic file (type png)
 <use img/Ảnh101.png>
-Package pdftex.def Info: img/Ảnh101.png  used on input line 505.
+Package pdftex.def Info: img/Ảnh101.png  used on input line 504.
 (pdftex.def)             Requested size: 515.59735pt x 113.81102pt.
 
-Overfull \hbox (33.66516pt too wide) in paragraph at lines 504--506
+Overfull \hbox (33.66516pt too wide) in paragraph at lines 503--505
  [] 
  []
 
 
-Overfull \hbox (17.6741pt too wide) in paragraph at lines 504--506
+Overfull \hbox (17.6741pt too wide) in paragraph at lines 503--505
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--514
+Underfull \hbox (badness 10000) in paragraph at lines 507--513
 
  []
 
 <img/Ảnh30.png, id=73, 452.892pt x 237.88875pt>
 File: img/Ảnh30.png Graphic file (type png)
 <use img/Ảnh30.png>
-Package pdftex.def Info: img/Ảnh30.png  used on input line 517.
+Package pdftex.def Info: img/Ảnh30.png  used on input line 516.
 (pdftex.def)             Requested size: 433.36853pt x 227.62204pt.
 [15 <./img/Ảnh09.png> <./img/Ảnh101.png>]
 <img/Ảnh40.png, id=79, 328.8285pt x 178.86826pt>
 File: img/Ảnh40.png Graphic file (type png)
 <use img/Ảnh40.png>
-Package pdftex.def Info: img/Ảnh40.png  used on input line 524.
+Package pdftex.def Info: img/Ảnh40.png  used on input line 523.
 (pdftex.def)             Requested size: 418.47559pt x 227.62204pt.
 <img/Ảnh50.png, id=80, 319.1925pt x 207.77625pt>
 File: img/Ảnh50.png Graphic file (type png)
 <use img/Ảnh50.png>
-Package pdftex.def Info: img/Ảnh50.png  used on input line 529.
+Package pdftex.def Info: img/Ảnh50.png  used on input line 528.
 (pdftex.def)             Requested size: 349.69551pt x 227.62204pt.
  [16 <./img/Ảnh30.png> <./img/Ảnh40.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
+Underfull \hbox (badness 10000) in paragraph at lines 532--534
 
  []
 
 <img/Ảnh60.png, id=86, 199.34476pt x 92.14426pt>
 File: img/Ảnh60.png Graphic file (type png)
 <use img/Ảnh60.png>
-Package pdftex.def Info: img/Ảnh60.png  used on input line 536.
+Package pdftex.def Info: img/Ảnh60.png  used on input line 535.
 (pdftex.def)             Requested size: 307.7827pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--540
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
 
  []
 
 <img/Ảnh70.png, id=87, 232.4685pt x 45.771pt>
 File: img/Ảnh70.png Graphic file (type png)
 <use img/Ảnh70.png>
-Package pdftex.def Info: img/Ảnh70.png  used on input line 541.
+Package pdftex.def Info: img/Ảnh70.png  used on input line 540.
 (pdftex.def)             Requested size: 289.0277pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--545
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
 
  []
 
 <img/Ảnh80.png, id=88, 179.4705pt x 91.542pt>
 File: img/Ảnh80.png Graphic file (type png)
 <use img/Ảnh80.png>
-Package pdftex.def Info: img/Ảnh80.png  used on input line 546.
+Package pdftex.def Info: img/Ảnh80.png  used on input line 545.
 (pdftex.def)             Requested size: 334.73178pt x 170.71652pt.
 [17 <./img/Ảnh50.png> <./img/Ảnh60.png> <./img/Ảnh70.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
 <img/Ảnh90.png, id=95, 327.02174pt x 177.0615pt>
 File: img/Ảnh90.png Graphic file (type png)
 <use img/Ảnh90.png>
-Package pdftex.def Info: img/Ảnh90.png  used on input line 551.
+Package pdftex.def Info: img/Ảnh90.png  used on input line 550.
 (pdftex.def)             Requested size: 420.43266pt x 227.62204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--558
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--564
+Underfull \hbox (badness 10000) in paragraph at lines 561--563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--567
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
 
 [18 <./img/Ảnh80.png> <./img/Ảnh90.png>] [19] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 701--703
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 736--752
+Underfull \hbox (badness 10000) in paragraph at lines 735--751
 
  []
 
 [23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 883--885
+Underfull \hbox (badness 10000) in paragraph at lines 904--906
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--899
+Underfull \hbox (badness 10000) in paragraph at lines 918--920
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 909--911
+Underfull \hbox (badness 10000) in paragraph at lines 930--932
 
  []
 
@@ -986,7 +986,7 @@ Here is how much of TeX's memory you used:
  36889 multiletter control sequences out of 15000+600000
  574839 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,89p,744b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,89p,744b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vnte
@@ -995,7 +995,7 @@ x/vnr/vnbxti10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vn
 tex/vnr/vnr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vnt
 ex/vnr/vnti12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vnt
 ex/vnr/vntt12.pfb>
-Output written on BTL-HDH_11.pdf (29 pages, 807493 bytes).
+Output written on BTL-HDH_11.pdf (29 pages, 807977 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
